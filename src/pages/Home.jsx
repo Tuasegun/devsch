@@ -159,7 +159,10 @@ const Home = () => {
 export default Home
 
 const StyledHome = styled.div`
-
+    overflow: hidden;
+    @media (max-width: 768px) {
+        overflow: auto;
+    }
     .typed-text{
         color: #07FFD7;
         
