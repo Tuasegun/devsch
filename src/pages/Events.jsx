@@ -76,9 +76,9 @@ const Events = () => {
                     </div>
                     <div className="event-description">
                     <p>
-                    Becoming a software engineer takes a healthy level of ambition, hard-work, and adaptability., analyzing user requirements, writing and testing code, researching, designing and developing user-focused software .
+                    Becoming a software engineer takes a healthy level of ambition, hard-work, and adaptability, analyzing user requirements, writing and testing code, researching, designing and developing user-focused software.
                     </p>
-                    <p>
+                    <p> 
                     In this session, we'll discuss some of the important steps and skills you need to gather in getting started as a software engineer.
                     </p>
                     </div>
