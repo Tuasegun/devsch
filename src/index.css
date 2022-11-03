@@ -1,10 +1,26 @@
 @font-face {
   font-family: 'Recoleta-Bold';
   src: url(./assets/fonts/Recoleta-Bold.ttf) format('truetype');
-
 }
+@font-face{
+  font-family: "EuclidCircularA";
+  src: url(./assets/fonts/EuclidCircularALight.ttf) format("truetype");
+}
+@font-face{
+  font-family: "EuclidCircularARegular";
+  src: url(./assets/fonts/EuclidCircularARegular.ttf) format("truetype");
+}
+@font-face{
+  font-family: "EuclidCircularAMedium";
+  src: url(./assets/fonts/EuclidCircularAMedium.ttf) format("truetype");
+}
+
 *{
   margin: 0;
-  font-family: Recoleta-Bold;
+  font-family: EuclidCircularA, EuclidCircularARegular, EuclidCircularAMedium, Recoleta-Bold, sans-serif;
   padding: 0;
+  scroll-behavior: smooth;
+}
+.toast{
+  font-family: 'EuclidCircularA';
 }

@@ -10,46 +10,22 @@ import logo from '../assets/logo.svg'
 import WhatsappLogo from '../assets/whatsappLogo.png'
 import NavIcon from '../assets/navIcon.png'
 import Typed from 'react-typed'
-
+import menu from '../assets/menu.svg'
+import HeaderModal from '../components/HeaderModal'
 const Home = () => {
     const [openNav, setOpenNav] = useState(false)
 
   return (
-    <StyledHome onClick={()=>setOpenNav(!openNav)}>
+    <StyledHome>
         <div className="header">
             <div className="logo-container">
                 <img src={logo} alt="logo" />
             </div>
-            <a href="https://wa.me/2348135369680" target="_blank" rel="noreferrer">
+            {/* <a href="https://wa.me/2348135369680" target="_blank" rel="noreferrer"> */}
             <div className="contact-us">
-                
-                <div className="whatsapp">
-                    <img src={WhatsappLogo} alt="whatsapp" />
+                <div className="menu-icon">
+                    <img src={menu} alt="menu" onClick={()=>setOpenNav(!openNav)} />
                 </div>
-                <div className="contact-number">
-                    <p>Contact us here</p>
-                </div>
-                
-            </div>
-            </a>
-            <div className="nav-bar">
-            
-                <img src={NavIcon} alt="nav-icon" onClick={()=>setOpenNav(!openNav)}/>
-                {
-                    openNav ? ( 
-                        <a href="https://wa.me/2348135369680" target="_blank" rel="noreferrer">
-                       <div className="contact-mobile">
-                        <div className="whatsapp">
-                            <img src={WhatsappLogo} alt="whatsapp" />
-                        </div>
-                        <div className="contact-number">
-                            <p>Contact us here</p>
-                        </div>
-                       </div>
-                       </a>
-                    ) : null
-                }
-        
             </div>
         </div>
         <div className="text">
@@ -140,7 +116,7 @@ const Home = () => {
                 </div>
             </Marquee>
         </div>
-        <div className="footer">
+        {/* <div className="footer">
         <a href="https://wa.me/2348135369680" target="_blank" rel="noreferrer">
         <div className="contact-us">
                 <div className="whatsapp">
@@ -151,7 +127,10 @@ const Home = () => {
                 </div>
             </div>
         </a>
-        </div>
+        </div> */}
+        {
+                    openNav && <HeaderModal clickProps={()=>setOpenNav(!openNav)} />
+                }
     </StyledHome>
   )
 }
@@ -159,18 +138,23 @@ const Home = () => {
 export default Home
 
 const StyledHome = styled.div`
-    overflow: hidden;
+    overflow-x: hidden;
+    height: 100%;
     @media (max-width: 768px) {
-        overflow: auto;
+        overflow-x: hidden;
+      
     }
     .typed-text{
-        color: #07FFD7;
-        
-        /* font-size: 2.5rem; */
+        color: #5FC152;
+        font-family: 'Recoleta-Bold' !important; 
+        span{
+            font-family: 'Recoleta-Bold' !important;
+        }
+       /* font-size: 2.5rem; */
     }
 
-    background-color: #000;
-    height: 100vh;
+    background-color: #130E0B;
+ 
     @keyframes textsroll {
     0% {
       top: -3.2rem;
@@ -250,8 +234,8 @@ const StyledHome = styled.div`
             }
         }
         .contact-us{
-            display: flex;
-            align-items: center;
+            /* display: flex; */
+            /* align-items: center; */
             .whatsapp{
                 width: 1.5rem;
                 height: 1.5rem;
@@ -267,6 +251,16 @@ const StyledHome = styled.div`
                     font-size: 1.25rem;
                     color: #E9ECF1;
                     font-family: 'Poppins', sans-serif;
+                }
+            }
+            .menu-icon{
+                width: 1.875rem;
+                height: 1.666875rem;
+                cursor: pointer;
+                img{
+                    width: 100%;
+                    height: 100%;
+
                 }
             }
         }
@@ -290,9 +284,6 @@ const StyledHome = styled.div`
                 height: 1.853125rem;
             }
 
-            .contact-us{
-                display: none;
-            }
         }
     }
 
@@ -302,10 +293,12 @@ const StyledHome = styled.div`
             display: flex;
             flex-direction: column;
             align-items: center;
+            
             h1{
                 font-size: 4.375rem;
                 color: #fff;
                 font-weight: 700;
+                font-family: 'Recoleta-Bold', sans-serif;
                 /* text-align: center; */
             }
             @media (max-width: 768px) {
@@ -323,6 +316,7 @@ const StyledHome = styled.div`
                     font-size: 2.5rem;
                     color: #fff;
                     font-weight: 400;
+                    font-family: 'Recoleta-Bold';
                 }
             }
         }
