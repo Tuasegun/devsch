@@ -254,6 +254,7 @@ const StyledEvents = styled.div`
                         @media (max-width: 768px) {
                             font-size: 1.7rem;
                             max-width: 100%;
+                            line-height: 1.6rem;
                         }
                     }
                 }
