@@ -203,11 +203,11 @@ const StyledEvents = styled.div`
     .events-container{
         z-index: 3;
         max-width: 48.5rem;
-        padding: 6.5625rem 7.625rem;
+        padding: 6.5625rem 7.625rem 2rem 7.625rem;
         position: relative;
         @media (max-width: 768px) {
             max-width: 100%;
-            padding: 5.25rem 1rem 5.25rem 2.375rem;
+            padding: 5.25rem 1rem 0.25rem 2.375rem;
         }
         .upcoming-header{
             margin-bottom: 4.375rem;

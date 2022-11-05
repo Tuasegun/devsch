@@ -25,15 +25,15 @@ const Footer = () => {
 export default Footer
 
 const  StyledFooter = styled.div`
-    margin-top: 5rem;
-    padding-bottom: 6rem;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
     .footer-container{
         .socials-container{
             display: flex;
             align-items: center;
             justify-content: center;
             column-gap: 0.970625rem;
-            margin-bottom: 3.4375rem;
+            margin-bottom: 1.4375rem;
             a{
               text-decoration: none;
               img{
