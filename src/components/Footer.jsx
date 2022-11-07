@@ -7,10 +7,10 @@ const Footer = () => {
     <StyledFooter>
             <div className="footer-container">
             <div className="socials-container">
-                <a href="https://www.instagram.com/schfordevs/">
+                <a href="https://twitter.com/schfordevs ">
                     <img src={twitter} alt="twitter" />
                 </a>
-                <a href="https://twitter.com/schfordevs">
+                <a href="https://www.instagram.com/schfordevs/">
                     <img src={instagram} alt="instagram" />
                 </a>
             </div>
