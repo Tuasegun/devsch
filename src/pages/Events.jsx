@@ -1,10 +1,9 @@
 import React, {useState, useRef} from 'react'
 import styled from 'styled-components'
-import speakerImg from '../assets/speakerImg.png'
 import Footer from '../components/Footer'
 import leftPattern from '../assets/leftPattern.png'
 import rightPattern from '../assets/rightPattern.png'
-import speaker from '../assets/speaker.jpg'
+import speaker from '../assets/speaker.jpeg'
 import { ToastContainer, toast } from 'react-toastify';
 const Events = () => {
     const [loading, setLoading] = useState(false)
@@ -71,15 +70,15 @@ const Events = () => {
                     </div>
                     <div className="event-title">
                         <h2>
-                        Getting started as a software engineer 
+                        Getting Your Software Engineering Job
                         </h2>
                     </div>
                     <div className="event-description">
                     <p>
-                    Becoming a software engineer takes a healthy level of ambition, hard-work, and adaptability, analyzing user requirements, writing and testing code, researching, designing and developing user-focused software.
+                    Finding your first job in technology or as a software developer can be intimidating and overwhelming. You could have been rejected because of your application or communication style during the interview phase.
                     </p>
                     <p> 
-                    In this session, we'll discuss some of the important steps and skills you need to gather in getting started as a software engineer.
+                    Join us on the November 20th as the exceptional Benjamin Busari speaks on "Getting Your Software Engineering Job ". This session promises to be chock-full of useful soap that cannot be purchased.
                     </p>
                     </div>
                 </div>
@@ -91,7 +90,7 @@ const Events = () => {
                     </div>
                     <div className="speaker-name">
                         <h4 className="speaker-name">
-                        Caleb Olojo
+                        Benjamin Busari 
                         </h4>
                         <h4 className="speaker-role">
                             Software Engineer
@@ -249,7 +248,7 @@ const StyledEvents = styled.div`
                         font-size: 1.875rem;
                         font-family: 'EuclidCircularAMedium';
                         font-weight: 700;
-                        max-width: 18.4375rem;
+                        max-width: 20.4375rem;
 
                         @media (max-width: 768px) {
                             font-size: 1.7rem;
