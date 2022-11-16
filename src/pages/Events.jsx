@@ -114,7 +114,7 @@ const Events = () => {
                         </div>
                         <div className="form-group">
                             <label htmlFor="phone">Phone</label>    
-                            <input type="text" name="phone" id="phone" required/>
+                            <input type="text" name="phone" id="phone" minLength={11} required/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="occupation">Occupation</label>
@@ -140,6 +140,9 @@ const Events = () => {
                                     <option value="Twitter">Twitter</option>
                                     <option value="Other">Other</option>
                             </select>
+                        </div>
+                        <div className="form-group hidden">
+                          <input type="hidden" name="date" id="date" value={new Date().toLocaleDateString()} />
                         </div>
                         <div className="form-group">
                             <button type="submit">
