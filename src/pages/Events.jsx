@@ -70,15 +70,15 @@ const Events = () => {
                     </div>
                     <div className="event-title">
                         <h2>
-                        Getting Your Software Engineering Job
+                        Things to avoid while starting out your software development career
                         </h2>
                     </div>
                     <div className="event-description">
                     <p>
-                    Finding your first job in technology or as a software developer can be intimidating and overwhelming. You could have been rejected because of your application or communication style during the interview phase.
+                    While you're excited about starting your new career as a software developer, be aware that there are quite a few mistakes you will or might make. 
                     </p>
                     <p> 
-                    Join us on the November 20th as the exceptional Benjamin Busari speaks on "Getting Your Software Engineering Job ". This session promises to be chock-full of useful soap that cannot be purchased.
+                    In this session our speaker Toyo Abasi Bob, will share her experience on some of the mistakes she made while starting her career as a developer, you don't want to miss out on this session.
                     </p>
                     </div>
                 </div>
@@ -90,10 +90,10 @@ const Events = () => {
                     </div>
                     <div className="speaker-name">
                         <h4 className="speaker-name">
-                        Benjamin Busari 
+                        Toyoabasi Bob
                         </h4>
                         <h4 className="speaker-role">
-                            Software Engineer
+                        Front-end Developer
                         </h4>
                     </div>
                 </div>
@@ -251,8 +251,8 @@ const StyledEvents = styled.div`
                         font-size: 1.875rem;
                         font-family: 'EuclidCircularAMedium';
                         font-weight: 700;
-                        max-width: 20.4375rem;
-
+                        /* max-width: 20.4375rem; */
+                        max-width: 25.4rem;
                         @media (max-width: 768px) {
                             font-size: 1.7rem;
                             max-width: 100%;
