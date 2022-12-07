@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Footer from "../components/Footer";
 import leftPattern from "../assets/leftPattern.png";
 import rightPattern from "../assets/rightPattern.png";
-import speaker from "../assets/speaker.png";
+import speaker from "../assets/speaker.jpg";
 import { ToastContainer, toast } from "react-toastify";
 const Events = () => {
   const [loading, setLoading] = useState(false);
@@ -71,21 +71,21 @@ const Events = () => {
             </div>
             <div className="event-title">
               <h2>
-                Challenges we face in the tech space and how to deal with them.
-              </h2>
+How to be a better software Engineer 
+             </h2>
             </div>
             <div className="event-description">
               <p>
-                There are a couple of challenges we face in the tech space,
-                which has made newbies who would love to kick off a career in
-                tech lose interest and find it difficult to focus. 
+              There are several ways to become a better software engineer. One of the most important things you can do is to continuously learn and improve your skills. This can include learning new programming languages, frameworks, and technologies, as well as staying up-to-date with industry trends and best practices.
+
               </p>
               <p>
-              In this
-                session, our speaker Dillion Megida should be sharing an insight
-                on how we can find our way around the difficulties we are likely
-                to face as we kick off that career in tech.
+              Another important aspect of becoming a better software engineer is to gain practical experience through internships, part-time jobs, or freelance projects. This can help you to develop real-world problem-solving skills and learn how to apply your knowledge in a professional setting.
               </p>
+              <p>
+              In this session David Odejobi would share a roadmap on how to be a better software enginee
+              </p>
+            
             </div>
           </div>
           <div className="speaker-details">
@@ -95,8 +95,8 @@ const Events = () => {
               </div>
             </div>
             <div className="speaker-name">
-              <h4 className="speaker-name">Dillion Megida </h4>
-              <h4 className="speaker-role">Developer Advocate </h4>
+              <h4 className="speaker-name">David Odejobi</h4>
+              <h4 className="speaker-role">Flutter Developer</h4>
             </div>
           </div>
         </div>
