@@ -11,20 +11,21 @@ export const Goals = () => {
     py="2.8125rem"
     px={['1.5625rem', '1.5625rem', '1.5625rem', '5%', '5%']}
     flexDirection={['column', 'column', 'column', 'row', 'row']}
+    rowGap="3.069375rem"
     >
         <Box>
         <Box
-        boxSize="4.5625rem"
+        boxSize={["3.125rem","4.5625rem"]} 
         objectFit="contain"
-        mb="2.03125rem"
+        mb={["1.125rem","2.03125rem"]}
         >
             <Image src="assets/icons/goalsIcon.svg" alt="goals" />
         </Box>
         <Box
-        mb="0.9375rem"
+        mb={["0.9375rem"]}
         >
             <Text
-            fontSize={['1.145rem', '1.145rem', '1.145rem', '1.25rem', '1.25rem']}
+            fontSize={['1.125rem', '1.125rem', '1.125rem', '1.25rem', '1.25rem']}
             color="#2E6B26"
 
             >
@@ -33,7 +34,7 @@ export const Goals = () => {
         </Box>
         <Box>
             <Heading
-            fontSize={['1.5625rem', '1.5625rem', '1.5625rem', '4.19760625rem', '4.19760625em']}
+            fontSize={['2.05375rem', '2.05375rem', '2.05375rem', '4.19760625rem', '4.19760625em']}
             fontWeight={700}
             color="#2E6B26"
             >

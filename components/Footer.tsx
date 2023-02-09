@@ -130,27 +130,28 @@ import {
           >
             <Heading
               textAlign="left"
-              fontSize={['4xl', '5xl']}
-              maxW="300px"
-              color="brand.white"
+              fontSize={['1.125rem', '1.125rem']}
+              maxW="100%"
+              fontWeight={400}
+              color="brand.black"
             >
-              Equipping designers to{' '}
+              Schfordevs provides the next generation{' '}
               <Box as="span" color="brand.yellow.500">
                 {' '}
-                solve problems
+                of developers everything they need to succeed in a competitive  
               </Box>{' '}
-              with design.
+              Schfordevs provides the next generation of developers everything they.
             </Heading>
   
             <Box mt="1.5rem" display={['block', 'block', 'block', 'none']}>
-             
+{/*              
               <Button
-                bg="brand.yellow.500"
+                bg="brand.bla"
                 color="brand.purple.500"
-                onClick={() => router.push("/enrol")}
+                // onClick={() => router.push("/enrol")}
               >
                 Get Started
-              </Button>
+              </Button> */}
              
             </Box>
           </VStack>
@@ -165,7 +166,7 @@ import {
               <Text
                 fontSize="1rem"
                 fontWeight="400"
-                color="#aaa"
+                color="brand.black"
                 textTransform="uppercase"
                 textAlign="left"
               >
@@ -177,8 +178,8 @@ import {
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
                   textAlign="left"
-                  color="brand.white"
-                  _hover={{ color: 'brand.yellow.500' }}
+                  color="brand.black"
+                  _hover={{ color: 'brand.black' }}
                 >
                   perxels@gmail.com
                 </Text>
@@ -188,7 +189,7 @@ import {
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
                   textAlign="left"
-                  color="brand.white"
+                  color="brand.black"
                   _hover={{ color: 'brand.yellow.500' }}
                 >
                   +2348135369680
@@ -199,7 +200,7 @@ import {
               <Text
                 fontSize="1rem"
                 fontWeight="400"
-                color="#aaa"
+                color="brand.black"
                 textTransform="uppercase"
                 textAlign="left"
               >
@@ -211,8 +212,8 @@ import {
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
                   textAlign="left"
-                  color="brand.white"
-                  _hover={{ color: 'brand.yellow.500' }}
+                  color="brand.black"
+                  _hover={{ color: 'brand.black' }}
                 >
                   Home
                 </Text>
@@ -222,8 +223,8 @@ import {
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
                   textAlign="left"
-                  color="brand.white"
-                  _hover={{ color: 'brand.yellow.500' }}
+                  color="brand.black"
+                  _hover={{ color: 'brand.black' }}
                 >
                   Testimonials
                 </Text>
@@ -233,8 +234,8 @@ import {
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
                   textAlign="left"
-                  color="brand.white"
-                  _hover={{ color: 'brand.yellow.500' }}
+                  color="brand.black"
+                  _hover={{ color: 'brand.black' }}
                 >
                   Enroll now
                 </Text>
@@ -244,8 +245,8 @@ import {
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
                   textAlign="left"
-                  color="brand.white"
-                  _hover={{ color: 'brand.yellow.500' }}
+                  color="brand.black"
+                  _hover={{ color: 'brand.black' }}
                 >
                   Class Plans
                 </Text>

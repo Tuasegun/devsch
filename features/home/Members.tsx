@@ -3,8 +3,8 @@ import { Box, Grid, GridItem, Text, Heading, SimpleGrid, Image, Center, Button }
 import { members } from '../../constant/'
 export const Members = () => {
     return (
-        <Box px="5%"
-            py="9.76875rem"
+        <Box px={["3%","5%"]}
+            py={["9.76875rem"]}
         >
             <Box
                 pos="relative"
@@ -27,14 +27,17 @@ export const Members = () => {
                     transform="translate(-50%, -50%)"
                     z-index="2"
                 >
-                    <Center>
+                    <Center
+                    width="100%"
+                    >
                         <Box
                             display="flex"
                             flexDirection="column"
                             alignItems="center"
+                          
                         >
                             <Heading
-                                fontSize="5.03875rem"
+                                fontSize={["3.88035rem","5.03875rem"]}
                                 lineHeight="3.168125rem"
                                 fontWeight={700}
                                 color="brand.white"
@@ -43,7 +46,7 @@ export const Members = () => {
                             <Heading
                                 fontWeight={700}
                                 color="brand.white"
-                                fontSize={"2rem"}
+                                fontSize={["0.8rem","2rem"]}
                                 mt="1.123125rem"
 
                             >
@@ -63,11 +66,11 @@ export const Members = () => {
 
                 </Box>
 
-                <Grid templateColumns="repeat(5, 1fr)" gap={"1.156875rem"}>
+                <Grid templateColumns={["repeat(2,1fr)","repeat(5, 1fr)"]} gap={["0.7rem","1.156875rem"]}>
                     {
                         members.map((member, index) => (
                             <GridItem key={index} colSpan={1}>
-                                <Image h="16.613125rem" w="100%" src={member.image} alt="member" />
+                                <Image h={["13.68375rem","16.613125rem"]} w="100%" src={member.image} alt="member" />
                             </GridItem>
                         ))
                     }

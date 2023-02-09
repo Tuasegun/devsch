@@ -5,22 +5,24 @@ export const Hero = () => {
   return (
     <Box
     bg="brand.green.300"
-   pt={["50px", "50px", "50px", "3.9375rem"]}
+   pt={["30px", "50px", "50px", "3.9375rem"]}
     pb={["50px", "50px", "50px", "6.4375rem"]}
-    pl={["20px", "20px", "20px", "6.25rem"]}
+    pl={["1.25em", "1.25rem", "1.25rem", "6.25rem"]}
+    pr={ ["1.25em", "1.25rem", "1.25rem", "0"]}
+    pos="relative"
     >
 
            
-            <SimpleGrid columns={2} spacing={10}
+            <SimpleGrid columns={[1, 2]} spacing={10}
             alignItems="center"
             >
                  {/* text-box */}
                 <Box>
-                    <Heading as="h1" fontSize={["49.8px"]} mb={4} lineHeight="3.914375rem">
+                    <Heading as="h1" fontSize={["1.8rem", "2.375rem", "2.375em",  "49.8px"]} mb={4} lineHeight={["2.8rem","2.8rem","3rem","3.914375rem"]}>
                     Kick start your career in front end development
                     </Heading>
 
-                    <Text maxW="29.25rem" mb={4} fontWeight="300" fontSize="1.145rem" lineHeight="2.09375rem">
+                    <Text maxW="29.25rem" mb={4} fontWeight="300" fontSize={["1.125rem","1.145rem"]} lineHeight={["1.8rem","2.09375rem"]}>
                     Start your journey as a Frontend Developer. You’ll learn all you need to know to become a Frontend Developer and build exciting portfolios.
                     </Text>
 
@@ -38,8 +40,9 @@ export const Hero = () => {
 
                   {/* pictures */}
                 <Box
-                display={['none', 'none', 'none', 'flex']}
+                display={['block', 'block', 'block', 'flex']}
                 columnGap={"26px"}
+              
                 >
                     <Box
                     maxWidth="26.125rem"

@@ -15,22 +15,22 @@ interface FooterSocialLink {
 export const FooterSocialLinks: FooterSocialLink[] = [
   {
     name: 'Twitter',
-    url: 'https://twitter.com/perxels',
+    url: '/',
     icon: FaTwitter,
   },
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/perxels/',
+    url: '/',
     icon: AiFillInstagram,
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/company/perxels/',
+    url: '/',
     icon: FaLinkedin,
   },
   {
     name: 'Youtube',
-    url: 'https://www.youtube.com/channel/UCmcEhILeheJi6s_nEqrIF_Q',
+    url: '/',
     icon: FaYoutube,
   },
 ]
@@ -41,23 +41,23 @@ export const links = [
     links: [
       {
         name: 'Testimonials',
-        url: '/testimonials',
+        url: '/',
       },
       {
         name: 'Student Projects',
-        url: '/studentprojects',
+        url: '/',
       },
       {
         name: 'Events',
-        url: '/event',
+        url: '/',
       },
       {
         name: 'Hire',
-        url: '/hire',
+        url: '/',
       },
       {
         name: 'Be a Partner',
-        url: '/partners',
+        url: '/',
       },
     ],
   },
@@ -66,28 +66,28 @@ export const links = [
     links: [
       {
         name: 'Basic Class',
-        url: '/enrol#basic-class',
+        url: '/',
       },
       {
         name: 'Advanced Class',
-        url: '/enrol#advanced-class',
+        url: '/',
       },
       {
         name: 'Premium Class',
-        url: '/enrol#premium-class',
+        url: '/',
       },
       {
         name: 'International',
-        url: '/international',
+        url: '/',
       },
       {
         name: 'Community',
-        url: 'https://chat.whatsapp.com/E6mQm7lHo412WAOOMP0Bwt',
+        url: '',
       },
     ],
   },
   {
-    title: 'Contact Us',
+    title: 'Newsletter',
     links: [
       {
         name: 'perxels@gmail.com',

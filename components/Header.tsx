@@ -18,13 +18,14 @@ export const Header = () => {
         <Flex justifyContent="space-between" alignItems="center">
           <Box 
           h={["50px", "50px", "50px", "50px", "43px"]}
-          w={["50px", "50px", "50px", "50px", "181px"]}
+          w={["150px", "50px", "50px", "50px", "181px"]}
           >
             <Image src="/assets/icons/schfordevslogo.svg" alt="logo" />
           </Box>
 
           <Flex
             columnGap="60px"
+            display={['none', 'flex']}
           >
             <Link href="/">
               <Text
@@ -52,6 +53,7 @@ export const Header = () => {
           <Button
           py={[4, 4, 4, "1.5625rem", "1.5625rem"]}
           px={[8, 8, 8, "2.0rem", "2.0rem"]}
+          display={['none', "flex"]}
           >View class plan</Button>
         </Flex>
       </MainContainer>
