@@ -1,2 +1,5 @@
 export * from './Hero'
 export * from './Benefits'
+export * from './CourseOverview'
+export * from './Tools'
+export * from './Case'

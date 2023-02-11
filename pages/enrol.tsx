@@ -1,5 +1,5 @@
 import { MainLayout } from '@/layouts/MainLayout'
-import {Hero, Benefits} from '../features/enrol'
+import {Hero, Benefits, CourseOverview, Tools, Case} from '../features/enrol'
 import React from 'react'
 
 const enrol = () => {
@@ -8,6 +8,9 @@ const enrol = () => {
         <MainLayout>
             <Hero/>
             <Benefits/>
+            <CourseOverview/>
+            <Tools />
+            <Case/>
         </MainLayout>
     </div>
   )
