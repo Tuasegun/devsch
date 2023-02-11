@@ -6,9 +6,7 @@ import { AiOutlineCalendar } from 'react-icons/ai'
 import { EventForm } from './EventForm'
 export const EventHero = () => {
   return (
-    <MainContainer
-   
-  >
+    <MainContainer>
     <Box py="2rem" w="full" >
       <Grid
         w="full"

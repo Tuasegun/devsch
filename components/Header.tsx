@@ -2,11 +2,11 @@ import React from "react";
 import { Box, Text, Image, Flex, Button } from "@chakra-ui/react";
 import { MainContainer } from "@/layouts/MainContainer";
 import Link from "next/link";
-export const Header = () => {
+export const Header = ({isWhite = false}) => {
   return (
     <Box
    pos="sticky"
-   bg="brand.green.300"
+   bg={isWhite ? "#FFFFFF" : "brand.green.300"}
    top="0"
    w="100%"
    py="1.5625rem"
@@ -18,7 +18,7 @@ export const Header = () => {
         <Flex justifyContent="space-between" alignItems="center">
           <Box 
           h={["50px", "50px", "50px", "50px", "43px"]}
-          w={["150px", "50px", "50px", "50px", "181px"]}
+          w={["150pxx", "50px", "50px", "50px", "181px"]}
           >
             <Image src="/assets/icons/schfordevslogo.svg" alt="logo" />
           </Box>
