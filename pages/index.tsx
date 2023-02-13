@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import { MainLayout } from '@/layouts/MainLayout'
-import {Hero, Goals, Perks, CourseDetail, Members} from '../features/home'
+import {Hero, Goals, Perks, CourseDetail, Members, Testimonial} from '../features/home'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -20,6 +20,7 @@ export default function Home() {
         <Hero/>
         <Goals/>
         <Perks/>
+        <Testimonial/>
         <CourseDetail/>
         <Members/>
     </MainLayout>

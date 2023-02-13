@@ -12,6 +12,7 @@ import {
     SimpleGrid,
     Text,
     VStack,
+    Image
   } from '@chakra-ui/react'
   import React from 'react'
   import { FooterSocialLinks, links } from '../constant'
@@ -27,14 +28,16 @@ import {
         <Box py="1.875rem">
           <Flex
             bg="brand.green.400"
-            px="3rem"
+            px={["1rem","3rem"]}
             py="1.5rem"
             borderRadius="10px"
-            alignItems="center"
+            alignItems= {["flex-start","flex-start","center","center"]}
             justifyContent="space-between"
-            display={['none', 'none', 'none', 'flex']}
+            flexDirection={['column', 'column', 'row', 'row']}
+            display={['flex', 'flex', 'flex', 'flex']}
+            mb={"3.8125rem"}
           >
-            <Text fontSize="4xl" color="brand.white" fontWeight="bold">
+            <Text fontSize={["1.2925rem","4xl"]} color="brand.white" fontWeight="bold" mb={["18px", "0"]}>
             Ready to talk? We're here to help
             </Text>
   
@@ -48,6 +51,10 @@ import {
               Enroll Now
             </Button>
           </Flex>
+
+          <Box mb={["1.6725rem", "0"]} width={["8.8125rem", "181px"]} height={["2.0981rem", "2.6938rem"]}>
+            <Image objectFit="contain" src="/assets/icons/schfordevslogo.svg" alt="logo" />
+          </Box>
   
           {/* links */}
           <Grid

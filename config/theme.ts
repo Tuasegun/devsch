@@ -4,6 +4,14 @@ import {colors} from './color'
 import { Button } from "./components/Button";
 
 export const theme = extendTheme({
+  baseStyle: {
+    '&.slick-slider > slick-dots > ul > slick-active': {
+      backgroundColor: '#2E6B26',
+      width: "10px",
+      height: "10px",
+      borderRadius: "50%",
+    }
+  },
   styles: {
     global: {
         body: {
@@ -38,7 +46,8 @@ export const theme = extendTheme({
                 content: `counters(item, ". ") ". "`,
                 counterIncrement: 'item',
               },
-        }
+        },
+       
     }
   },
   fonts: {
