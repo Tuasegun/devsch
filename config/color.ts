@@ -6,6 +6,7 @@ export const colors = {
             300: '#F0F9EE',
             400: '#2E6B26',
         },
+        yellow: "#F0F424",
         white: "#FFFFFF",
         black:'#434343',
         overlay:{
