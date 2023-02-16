@@ -1,3 +1,5 @@
 export * from './ContentCard'
 export * from './ContentGrid'
 export * from './BlogHero'
+export * from './ViewBlogContent'
+export * from './RelatedArticles'

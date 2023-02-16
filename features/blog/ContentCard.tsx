@@ -1,8 +1,10 @@
 import React from "react";
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import { BlogInterface } from "@/constant";
+
 export const ContentCard = ({
   title,
+  id,
   authorName,
   duration,
   previewText,
@@ -11,6 +13,8 @@ export const ContentCard = ({
   return (
     <Box
     cursor="pointer"
+    as="a"
+    href={`blog/${id}`}
     >
       <Image src={image} alt={title} />
       <Box

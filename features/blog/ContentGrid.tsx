@@ -9,9 +9,11 @@ export const ContentGrid = () => {
         <Box py="6.1875rem">
             <SimpleGrid columns={[1, 2, 3]} spacing="30px">
                 {
-                    BlogContents.map(({image, title, duration, previewText, authorName}) => {
+                    BlogContents.map(({image, title, duration, previewText, authorName, id}) => {
                         return (
                             <ContentCard
+                                key={id}
+                                id={id}    
                                 title={title}
                                 image={image}
                                 previewText={previewText}
