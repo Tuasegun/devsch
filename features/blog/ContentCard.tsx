@@ -14,7 +14,7 @@ export const ContentCard = ({
     <Box
     cursor="pointer"
     as="a"
-    href={`blog/${id}`}
+    href={`/blog/${id}`}
     >
       <Image src={image} alt={title} />
       <Box
