@@ -1,14 +1,28 @@
 import React from 'react'
 import { Box, Grid, GridItem, Text, Heading, SimpleGrid, Image, Center, Button } from '@chakra-ui/react'
-import { members } from '../../constant/'
+import { members, memberInterface } from '../../constant/'
+import { MainContainer } from '@/layouts/MainContainer'
 export const Members = () => {
+    const [isMobile, setIsMobile] = React.useState(false)
+    const [membersData, setMembersData] = React.useState<Array<memberInterface>>([])
+    React.useEffect(() => {
+        if (window.innerWidth < 768) {
+            setIsMobile(true)
+            setMembersData(members.slice(0, 4))
+        }else{
+            setIsMobile(false)
+            setMembersData(members)
+        }
+    }, [])
     return (
-        <Box px={["3%","5%"]}
-            py={["9.76875rem"]}
+        <Box
+        py={["4.625rem","10.125rem"]}
         >
+            <MainContainer>
             <Box
                 pos="relative"
             // px="5%"
+            
             >
                 {/* overlay */}
                 <Box
@@ -66,16 +80,34 @@ export const Members = () => {
 
                 </Box>
 
-                <Grid templateColumns={["repeat(2,1fr)","repeat(5, 1fr)"]} gap={["0.7rem","1.156875rem"]}>
+                <Grid templateColumns={["repeat(2,1fr)","repeat(5, 1fr)"]} gap={["0.7rem","1.156875rem"]} >
                     {
-                        members.map((member, index) => (
+                        
+                       isMobile ? membersData.map((member, index) => (
                             <GridItem key={index} colSpan={1}>
-                                <Image h={["13.68375rem","16.613125rem"]} w="100%" src={member.image} alt="member" />
+                                <Image h={["auto","16.613125rem"]} w="100%" src={member.image} alt="member" />
+                            </GridItem>
+                        )) : members.map((member, index) => (
+                            <GridItem key={index} colSpan={1}>
+                                <Image h={["auto","16.613125rem"]} w="100%" src={member.image} alt="member" />
                             </GridItem>
                         ))
                     }
                 </Grid>
+
+                {/* <Grid templateColumns={["repeat(2,1fr)","repeat(5, 1fr)"]} gap={["0.7rem","1.156875rem"]} display={["grid", "none"]}>
+                    {
+                        members.splice(0, 4).map((member, index) => (
+                            <GridItem key={index} colSpan={1}>
+                                <Image h={["auto","16.613125rem"]} w="100%" src={member.image} alt="member" />
+                            </GridItem>
+                        ))
+                        
+                    }
+                </Grid> */}
+
             </Box>
+            </MainContainer>
         </Box>
     )
 }

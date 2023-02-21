@@ -1,12 +1,16 @@
 import React from "react";
-import { Box, Text, Image, Flex, Button } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, Button, Icon } from "@chakra-ui/react";
 import { MainContainer } from "@/layouts/MainContainer";
 import Link from "next/link";
+import {RiMenu3Line} from 'react-icons/ri'
+import {MdCancel} from 'react-icons/md'
+import {HeaderDropdown} from './HeaderDropdown'
 export const Header = ({isWhite = false}) => {
+  const [showDropdown, setShowDropdown] = React.useState(false)
   return (
     <Box
    pos="sticky"
-   bg={isWhite ? "#FFFFFF" : "brand.green.300"}
+   bg={isWhite || showDropdown ? "#FFFFFF" : "brand.green.300"}
    top="0"
    w="100%"
    py="1.5625rem"
@@ -17,10 +21,12 @@ export const Header = ({isWhite = false}) => {
       >
         <Flex justifyContent="space-between" alignItems="center">
           <Box 
-          h={["50px", "50px", "50px", "50px", "43px"]}
-          w={["150pxx", "50px", "50px", "50px", "181px"]}
+          h={["2.0981rem", "2.0981rem", "2.0981rem", "43px", "43px"]}
+          w={["8.8125rem", "8.8125rem", "8.8125rem", "181px", "181px"]}
           >
-            <Image src="/assets/icons/schfordevslogo.svg" alt="logo" />
+           {
+              showDropdown ? " " : <Image src="/assets/icons/schfordevslogo.svg" alt="logo" />
+           }
           </Box>
 
           <Flex
@@ -51,12 +57,24 @@ export const Header = ({isWhite = false}) => {
           </Flex>
 
           <Button
-          py={[4, 4, 4, "1.5625rem", "1.5625rem"]}
+          py={[4, 4, 4, "1.8625rem", "1.8625rem"]}
           px={[8, 8, 8, "2.0rem", "2.0rem"]}
           display={['none', "flex"]}
           >View class plan</Button>
+
+          <Icon 
+          as = {showDropdown ? MdCancel : RiMenu3Line}
+          display={['flex', 'none']}
+          fontSize="2.1438rem"
+          color="#2E6B26"
+          onClick={() => setShowDropdown(!showDropdown)}
+          />
+         
+  
         </Flex>
       </MainContainer>
+      { showDropdown && <HeaderDropdown setShowDropdown={setShowDropdown} /> }
+
     </Box>
   );
 };

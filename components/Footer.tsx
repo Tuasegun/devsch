@@ -31,7 +31,7 @@ import {
             px={["1rem","3rem"]}
             py="1.5rem"
             borderRadius="10px"
-            alignItems= {["flex-start","flex-start","center","center"]}
+            alignItems= {["center","center","center","center"]}
             justifyContent="space-between"
             flexDirection={['column', 'column', 'row', 'row']}
             display={['flex', 'flex', 'flex', 'flex']}
@@ -46,7 +46,10 @@ import {
               href="/enrol"
               _hover={{ textDecor: 'none', bg: 'brand.yellow.500' }}
               bg="brand.white"
-              color="brand.purple.500"
+              color="brand.green.400"
+              py={[4, 4, 4, "1.8625rem", "1.8625rem"]}
+              px={"3.625rem"}
+              fontSize="20.36px"
             >
               Enroll Now
             </Button>

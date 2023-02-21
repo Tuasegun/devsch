@@ -8,7 +8,7 @@ export const Button: ComponentStyleConfig = {
       borderRadius: '7.12638px',
       color: 'brand.white',
       px: ['1.5rem', '1.5rem', '2.25rem'],
-      py: '0.875rem',
+      py: '1.125rem',
       _hover: {
         bg: '#2E6B26',
         color: 'brand.white',
@@ -75,7 +75,7 @@ export const Button: ComponentStyleConfig = {
         borderRadius: '30px',
         color: 'brand.purple.500',
         px: '2.25rem',
-        py: '0.875rem',
+        py: '1.125rem',
         transition: 'all 0.35s ease-in-out',
         _hover: {
           borderRadius: '30px',

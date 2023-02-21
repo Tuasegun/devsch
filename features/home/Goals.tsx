@@ -1,18 +1,28 @@
 import React from 'react'
 import {Box, Text, Image, Heading, Flex} from '@chakra-ui/react'
+import { MainContainer } from '@/layouts/MainContainer'
 
 export const Goals = () => {
   return (
+    <Box
+    position="relative"
+    bg="brand.green.300"
+    bgImage="url(assets/images/home/goalsBgPattern.png)"
+    >
+    <MainContainer
+   bg="none"
+    >
     <Flex
+    
     justifyContent="space-between"
     alignItems={['flex-start', 'flex-start', 'flex-start', 'center', 'center']}
-    bg="brand.green.300"
-    bgImage="url('assets/images/home/goalsBgPattern.png')"
     py="2.8125rem"
-    px={['1.5625rem', '1.5625rem', '1.5625rem', '5%', '5%']}
     flexDirection={['column', 'column', 'column', 'row', 'row']}
     rowGap="3.069375rem"
     >
+       
+
+    
         <Box>
         <Box
         boxSize={["3.125rem","4.5625rem"]} 
@@ -29,16 +39,17 @@ export const Goals = () => {
             color="#2E6B26"
 
             >
-            We’re on a mision to train more than
+           We are on a mission of training
             </Text>
         </Box>
         <Box>
             <Heading
-            fontSize={['2.05375rem', '2.05375rem', '2.05375rem', '4.19760625rem', '4.19760625em']}
+            fontSize={['2.05375rem', '2.05375rem', '2.05375rem', '4.19760625rem', '3.19760625em']}
             fontWeight={700}
             color="#2E6B26"
+            lineHeight={["2.8rem","2.8rem","3rem","3.7625rem"]}
             >
-            1000+ People in 2023
+            1,000+ <Text as="span" fontWeight={"600"} fontSize="2.5rem" color="#2E6B26">SKILLED SOFTWARE DEVELOPERS IN 3 YEARS</Text>
             </Heading>
         </Box>
         </Box>
@@ -51,6 +62,10 @@ export const Goals = () => {
         >
             <Image  borderRadius="0.6091925rem" src="assets/images/home/goalsImage.png" alt="goals" />
         </Box>
+     
     </Flex>
+    </MainContainer>
+    </Box>
+    
   )
 }

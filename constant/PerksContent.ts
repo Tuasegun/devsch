@@ -6,18 +6,18 @@ export interface PerksInterface {
 
 export const perksContent: PerksInterface[] = [
     {
-        title: "Practical and hands - on",
-        description: "Schfordevs provides the next generation of developers everything they need to succeed in a competitive ",
+        title: "Practical training",
+        description: "Our trainings are delivered in a practical hands-on approach to enable you learn indepthly",
         image: "assets/images/home/goalsCard3.png"
     },
     {
-        title: "Practical and hands - on",
-        description: "Schfordevs provides the next generation of developers everything they need to succeed in a competitive ",
+        title: "Experienced Instructors",
+        description: "You will learn from experienced software developers who will train and mentor you closely ",
         image: "assets/images/home/goalsCard2.png"
     },
     {
-        title: "Practical and hands - on",
-        description: "Schfordevs provides the next generation of developers everything they need to succeed in a competitive ",
+        title: "Internship placement",
+        description: "At the end of the training, we would place you in an internship for 6 weeks to get work experience",
         image: "assets/images/home/goalsCard.png"
     }
 ]

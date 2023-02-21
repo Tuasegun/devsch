@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Text, Heading, SimpleGrid, Button, Image} from '@chakra-ui/react'
+import {Box, Text, Heading, SimpleGrid, Button, Image, Flex} from '@chakra-ui/react'
 import Link from 'next/link'
 export const Hero = () => {
   return (
@@ -10,26 +10,34 @@ export const Hero = () => {
     pl={["1.25em", "1.25rem", "1.25rem", "6.25rem"]}
     pr={ ["1.25em", "1.25rem", "1.25rem", "0"]}
     pos="relative"
+    height={["fit-content","100vh"]} 
     >
 
            
-            <SimpleGrid columns={[1, 2]} spacing={10}
+            <Flex 
+            // columns={[1, 2]}
             alignItems="center"
+            justifyContent="space-between"
+            flexDirection={['column', 'column', 'column', 'row']}
+            rowGap={["2.5rem", "2.5rem", "2.5rem", "0"]}
+            // maxHeight={["100%", "100%", "100%", "31.6875rem"]}
             >
                  {/* text-box */}
-                <Box>
+                <Box
+                width={["100%", "100%", "100%", "45%"]}
+                >
                     <Heading as="h1" fontSize={["1.8rem", "2.375rem", "2.375em",  "49.8px"]} mb={4} lineHeight={["2.8rem","2.8rem","3rem","3.914375rem"]}>
-                    Kick start your career in front end development
+                    Launch your career in Software development
                     </Heading>
 
-                    <Text maxW="29.25rem" mb={4} fontWeight="300" fontSize={["1.125rem","1.145rem"]} lineHeight={["1.8rem","2.09375rem"]}>
-                    Start your journey as a Frontend Developer. You’ll learn all you need to know to become a Frontend Developer and build exciting portfolios.
+                    <Text maxW="29.25rem" mb={"2.75rem"} fontWeight="300" fontSize={["1.125rem","1.145rem"]} lineHeight={["1.8rem","2.09375rem"]}>
+                    Learn how to code, build products and solve problems for users while adding value to businesses with technology.
                     </Text>
 
                     <Link href="/courses">
                     <Button  
-                    py={[4, 4, 4, "1.5625rem", "1.5625rem"]}
-                    px={"2.8rem"}
+                    py={[4, 4, 4, "29.8px", "1.8625rem"]}
+                    px={"3.625rem"}
                     fontSize="20.36px"
                     mr={4}>
                     Enroll now 
@@ -40,28 +48,34 @@ export const Hero = () => {
 
                   {/* pictures */}
                 <Box
+                   width={["100%", "100%", "100%", "55%"]}
                 display={['block', 'block', 'block', 'flex']}
                 columnGap={"26px"}
-              
+                alignItems="center"
+
                 >
                     <Box
-                    maxWidth="26.125rem"
-                    height="auto"
+                    width={["100%","50.875rem"]}
+                    height={["auto","31.6875rem"]}
                     >
-                        <Image  src="assets/images/home/heroImage1.png" alt="hero" />
+                        <Image height="100%" width="100%" objectFit={"cover"}   src="assets/images/home/heroImage1.png" alt="hero"  borderRadius=".8319rem"/>
                     </Box>
                     <Box
                     display={['none', 'none', 'none', 'block']}
+                    width={"15.75rem"}
+                    height="31.6875rem"
                     >
-                        <Image src="assets/images/home/heroImage2.png" alt="hero" />
+                        <Image height="100%" width="100%" objectFit={"cover"} src="assets/images/home/heroImage2.png" alt="hero"  objectPosition={"20% top"} borderRadius=".8319rem"/>
                     </Box>
                     <Box
                     display={['none', 'none', 'none', 'block']}
+                    width={"15.75rem"}
+                    height="31.6875rem"
                     >
-                        <Image src="assets/images/home/heroImage3.png" alt="hero" />
+                        <Image height="100%" width="100%" objectFit={"cover"} src="assets/images/home/heroImage3.png" alt="hero" objectPosition={"80% top"} borderRadius=".8319rem"/>
                     </Box>
                 </Box>
-            </SimpleGrid>
+            </Flex>
           
     </Box>
   )

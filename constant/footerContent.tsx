@@ -40,23 +40,23 @@ export const links = [
     title: 'Services',
     links: [
       {
+        name: 'About us',
+        url: '/',
+      },
+      {
+        name: 'Contact us',
+        url: '/',
+      },
+      {
+        name: 'Courses',
+        url: '/',
+      },
+      {
         name: 'Testimonials',
         url: '/',
       },
       {
-        name: 'Student Projects',
-        url: '/',
-      },
-      {
-        name: 'Events',
-        url: '/',
-      },
-      {
-        name: 'Hire',
-        url: '/',
-      },
-      {
-        name: 'Be a Partner',
+        name: 'Join community',
         url: '/',
       },
     ],

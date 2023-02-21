@@ -7,34 +7,22 @@ interface TestimonialContentInterface {
 
 export const TestimonialContent: TestimonialContentInterface[] = [
     {
-        name: "Tolu Oluwayole",
+        name: "Olakunle",
         role: "Software Engineer 1",
-        testimony: "Schfordevs provides the next generation of developers everything they need to succeed in a competitive Schfordevs provides the next generation of developers everything they need to succeed in a competitive Schfordevs provides the next generation of developers.",
+        testimony: "Schfordevs helped me build a strong confidence in coding skills, I learnt the most efficient and effective development process, soft skills needed to be a good frontend developer.",
         image: "assets/images/testimonial/testimonial1.png"
     },
     {
-        name: "Tolu Oluyoless",
+        name: "Tolu",
         role: "Software Enginseer",
         testimony: "Schfordevs provides the next generation of developers everything they need to succeed in a competitive Schfordevs provides the next generation of developers everything they need to succeed in a competitive Schfordevs provides the next generation of developers.",
         image: "assets/images/testimonial/testimonial2.png"
     },
     {
-        name: "Tolu Oluyolwde",
+        name: "Tolani",
         role: "Software Engdineer",
         testimony: "Schfordevs provides the next generation of developers everything they need to succeed in a competitive Schfordevs provides the next generation of developers everything they need to succeed in a competitive Schfordevs provides the next generation of developers.",
         image: "assets/images/testimonial/testimonial3.png"
-    },
-    {
-        name: "Tolu Oluyoleyy",
-        role: "Software Engineer2",
-        testimony: "Schfordevs provides the next generation of developers everything they need to succeed in a competitive Schfordevs provides the next generation of developers everything they need to succeed in a competitive Schfordevs provides the next generation of developers.",
-        image: "assets/images/testimonial/testimonial4.png"
-    },
-    {
-        name: "Tolu Oluyolewww",
-        role: "Software Engineer3",
-        testimony: "Schfordevs provides the next generation of developers everything they need to succeed in a competitive Schfordevs provides the next generation of developers everything they need to succeed in a competitive Schfordevs provides the next generation of developers.",
-        image: "assets/images/testimonial/testimonial5.png"
     }
 
 ]

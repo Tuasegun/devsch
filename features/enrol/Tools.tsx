@@ -11,13 +11,16 @@ export const Tools = () => {
         rowGap={[8, 8, 8, 8, 0]}
       >
         <Box maxW={["100%", "35%"]}>
-          <Heading>Learn with the industry’s best tools</Heading>
+          <Heading
+          fontSize="2.1875rem"
+          lineHeight="2.625rem"
+          >Learn with the industry’s best tools</Heading>
 
-          <Text>
-            We are proud to see our students getting development jobs, impacting
-            teams with their skills and being paid well for their value. During
-            your training you will learn how to use latest software's used for
-            front end development
+          <Text
+          fontSize={["1.125rem", "1.125rem", "1.145rem", "1.145rem", "1.145rem"]}
+          lineHeight={["33.5px"]}
+          >
+           During the training, you will be exposed to the best software development tools and how to use them to build products.
           </Text>
         </Box>
         <Box w={["100%", "60%"]}>

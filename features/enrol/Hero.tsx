@@ -11,7 +11,7 @@ export const Hero = () => {
         <Box
         display={['flex']}
         flexDirection={['column', 'column', 'column', 'column', 'row']}
-        py="1.5625rem"
+        py="3.5rem"
         rowGap="3.875rem"
         justifyContent={"space-between"}
         >
@@ -21,28 +21,28 @@ export const Hero = () => {
                     <Text
                      bg="brand.green.200"
                      display={"inline-flex"}
-                     p="0.5rem 1.10625rem"
+                     p=".5rem 1.1062rem"
                      alignItems="center"
                      color="brand.green.400"
-                     borderRadius={"0.375rem"}
-                     fontSize="0.9375rem"
+                     borderRadius={".375rem"}
+                     fontSize=".9375rem"
                      mb={["1.9375rem","2.75rem"]}
                     >
-                  <AiFillThunderbolt/>{" "}From beginner to professional level
+                  <AiFillThunderbolt/>{" "}Learn frontend development skills 
                     </Text>
 
                     <Heading
                     fontSize={["2rem","2.375rem","3.1125rem"]}
-                    lineHeight={["2.8rem","3.0875rem","3.914375rem"]}
+                    lineHeight={["2.8rem","3.0875rem","3.9144rem"]}
                     >
-                    Start your Frontend Development Journey TODAY!
+                    Learn frontend development skills 
                     </Heading>
 
                     <Text
                     fontWeight={300}
                     
                     >
-                    Go from zero knowledge to being able to build your technology platforms! Starting with the foundations of software engineering. By the end of this program you would have mastered a specialization and learn the art of effective collaboration to solve real world problems.
+                  Go from zero knowledge to being able to create the front-end interface of any website, mobile application and Software-as-a-Service.
                     </Text>
             </Box>
                   <Box
