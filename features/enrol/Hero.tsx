@@ -1,6 +1,7 @@
 import { MainContainer } from '@/layouts/MainContainer'
 import { Box, Heading, Image, Text } from '@chakra-ui/react'
 import { AiFillThunderbolt } from 'react-icons/ai'
+import {EnrolFloat} from './EnrolFloat'
 export const Hero = () => {
   return (
   
@@ -11,7 +12,7 @@ export const Hero = () => {
         <Box
         display={['flex']}
         flexDirection={['column', 'column', 'column', 'column', 'row']}
-        py="3.5rem"
+        py="4.5rem"
         rowGap="3.875rem"
         justifyContent={"space-between"}
         >
@@ -50,8 +51,26 @@ export const Hero = () => {
                   display={["block","flex"]}
                   justifyContent={"flex-end"}
                   objectFit={"contain"}
+                  position="relative"
                   >
                   <Image maxW={["100%", "32.5rem"]}  src="assets/images/enrol/heroImage.png" alt="hero" />
+
+                  <Box
+                  position="absolute"
+                  transform= "translate(10%, -60%)"
+                  display={["none", "block"]}
+                  >
+                    <EnrolFloat image={"assets/images/enrol/heroPerson1.png"} name={"Olakunke"} content={"Schfordevs helped me build a strong confidence in my coding skills."} />
+                  </Box>
+
+                  <Box
+                  position="absolute"
+                  bottom="0"
+                  transform= "translate(-180%, 0)"
+                  display={["none", "block"]}
+                  >
+                    <EnrolFloat  image={"assets/images/enrol/heroPerson2.png"} name={"Tolani"} content={"Schfordevs gave me the best knowledge i need to become a frontend developer"} />
+                  </Box>
                   </Box>
             <Box>
 

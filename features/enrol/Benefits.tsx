@@ -15,7 +15,7 @@ export const Benefits = () => {
     bg="brand.green.400"
     bgImage={"url('/assets/images/enrol/benBgPattern.png')"}
     py="2.5rem"
-    px={['1.5625rem', '1.5625rem', '1.5625rem', '6%', '6%']}
+    px={['1.5625rem', '1.5625rem', '1.5625rem', '10%', '10%']}
     >
         <Box>
             <List

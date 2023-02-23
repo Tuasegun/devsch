@@ -15,7 +15,7 @@ import {
 import { FaTwitter } from 'react-icons/fa'
 import { BiCopy } from 'react-icons/bi'
 import { RiWhatsappFill } from 'react-icons/ri'
-// import { SuccessModal } from '../../components'
+import SuccessModal  from '../../components/SuccessModal'
 import { TwitterShareButton, WhatsappShareButton } from 'next-share'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
@@ -26,8 +26,7 @@ export const EventForm = () => {
   )
   const formRef = useRef(null)
   const [loading, setLoading] = useState(false)
-  const scriptUrl =
-    ''
+  const scriptUrl = 'https://script.google.com/macros/s/AKfycbwXuL6faioJXJxNFI7TbMP9CZEg_HD7nTf2MDBpFw5E4sr4V6zIHVW24MYTWZljmB1s/exec'
   const { isOpen, onOpen, onClose } = useDisclosure()
   const handleSubmit = (e: any) => {
     e.preventDefault()
@@ -56,12 +55,12 @@ export const EventForm = () => {
 
   return (
     <>
-      {/* <SuccessModal
+      <SuccessModal
         isOpen={isOpen}
         onClose={onClose}
         title="Your registration has been received."
         description="You will receive an email with the meeting link shortly."
-      /> */}
+      />
       <Formik
         initialValues={{
           name: '',

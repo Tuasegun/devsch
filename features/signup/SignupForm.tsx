@@ -12,20 +12,21 @@ import {
   } from '@chakra-ui/react'
   import * as Yup from 'yup'
   import { Formik } from 'formik'
-//   import { SuccessModal } from '../../components'
+  import SuccessModal  from '../../components/SuccessModal'
+
 export const SignupForm = () => {
-const scriptUrl =''
+const scriptUrl ='https://script.google.com/macros/s/AKfycbzKRCIygn68NKkpR6SKEA5Y0WtEpyyiT1G2aFCTJ0fMcLGpJXFJre5j1MFLHAlc41fipA/exec'
 const { isOpen, onOpen, onClose } = useDisclosure()
 const [errorBorder, setErrorBorder] = useState()
 const [loading, setLoading] = useState(false)
 return (
   <>
-    {/* <SuccessModal
+    <SuccessModal
       isOpen={isOpen}
       onClose={onClose}
       title="Thank you for your submission!"
       description="Our representative will call you within the next 24 hours."
-    /> */}
+    />
     <Box
       className="enrol-form"
       overflowY="auto"
@@ -46,7 +47,6 @@ return (
           name: '',
           phone: '',
           email: '',
-          class: '',
           location: '',
           howdidyouknow: '',
           occupation: '',
@@ -57,7 +57,6 @@ return (
           email: Yup.string()
             .email('Invalid email address')
             .required('Email is required'),
-          class: Yup.string().required('Class is required'),
           location: Yup.string().required('Location is required'),
           howdidyouknow: Yup.string().required(
             'How did you know is required',
@@ -74,7 +73,6 @@ return (
           formData.append('name', values.name as string)
           formData.append('phone', values.phone as string)
           formData.append('email', values.email as string)
-          formData.append('class', values.class as string)
           formData.append('location', values.location as string)
           formData.append('howdidyouknow', values.howdidyouknow as string)
           formData.append('occupation', values.occupation as string)
@@ -187,40 +185,7 @@ return (
               </Text>
             ) : null}
 
-            <Select
-             bg="brand.white"
-              h="3.5rem"
-              placeholder="What class do you want to apply for?"
-              _placeholder={{ color: 'brand.dark.200' }}
-              color="brand.dark.200"
-              name="class"
-              value={formik.values.class}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              borderColor={
-                formik.touched.class && formik.errors.class
-                  ? 'red.500'
-                  : 'brand.dark.200'
-              }
-              _focusVisible={{
-                outline: 'none',
-              }}
-            >
-              <option value="Basic Program">Basic Program</option>
-              <option value="Advanced Program">Advanced Program</option>
-              <option value="Premium (Virtual) Program">
-                Premium (Virtual) Program
-              </option>
-              <option value="Premium (Physical) Program">
-                Premium (Physical) Program
-              </option>
-              <option value="International Class">International Class</option>
-            </Select>
-            {formik.touched.class && formik.errors.class ? (
-              <Text color="red.500" fontSize="sm">
-                {formik.errors.class}
-              </Text>
-            ) : null}
+           
 
             <Input
              bg="brand.white"

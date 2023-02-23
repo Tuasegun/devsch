@@ -105,7 +105,7 @@ import {
               </Flex>
             </GridItem>
             {links.map(({ title, links }) => (
-              <GridItem key={title} colSpan={0.5} w="100%">
+              <GridItem key={title} colSpan={1} w="100%">
                 <Text color="brand.black" fontSize="1.125rem" fontWeight="bold">
                   {title}
                 </Text>
@@ -133,7 +133,7 @@ import {
           
               </GridItem>
             ))}
-              <GridItem colSpan={0.5} w="100%">
+              <GridItem colSpan={2} w="100%">
                 <Text color="brand.black" fontSize="1.125rem" fontWeight="bold" mb="1.375rem">
                     News Letter
                 </Text>
@@ -203,12 +203,12 @@ import {
             <VStack alignItems="flex-start">
               <Text
                 fontSize="1rem"
-                fontWeight="400"
+                fontWeight="600"
                 color="brand.black"
                 textTransform="uppercase"
                 textAlign="left"
               >
-                Contact
+                Quick Links
               </Text>
   
               <Link w="full" target="_blank" href="mailto: perxels@gmail.com">
@@ -219,44 +219,10 @@ import {
                   color="brand.black"
                   _hover={{ color: 'brand.black' }}
                 >
-                  perxels@gmail.com
+                  Course Overview
                 </Text>
               </Link>
-              <Link w="full" target="_blank" href="tel: +2348135369680">
-                <Text
-                  w="full"
-                  fontSize={['lg', 'xl', '2xl']}
-                  textAlign="left"
-                  color="brand.black"
-                  _hover={{ color: 'brand.yellow.500' }}
-                >
-                  +2348135369680
-                </Text>
-              </Link>
-            </VStack>
-            <VStack alignItems="flex-start">
-              <Text
-                fontSize="1rem"
-                fontWeight="400"
-                color="brand.black"
-                textTransform="uppercase"
-                textAlign="left"
-              >
-                Pages
-              </Text>
-  
-              <Link w="full" href="/">
-                <Text
-                  w="full"
-                  fontSize={['lg', 'xl', '2xl']}
-                  textAlign="left"
-                  color="brand.black"
-                  _hover={{ color: 'brand.black' }}
-                >
-                  Home
-                </Text>
-              </Link>
-              <Link w="full" href="/testimonials">
+              <Link w="full" target="_blank" href="mailto: perxels@gmail.com">
                 <Text
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
@@ -267,7 +233,7 @@ import {
                   Testimonials
                 </Text>
               </Link>
-              <Link w="full" href="/enrol">
+              <Link w="full" target="_blank" href="mailto: perxels@gmail.com">
                 <Text
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
@@ -275,10 +241,10 @@ import {
                   color="brand.black"
                   _hover={{ color: 'brand.black' }}
                 >
-                  Enroll now
+                  Blog
                 </Text>
               </Link>
-              <Link w="full" href="/enrol">
+              <Link w="full" target="_blank" href="mailto: perxels@gmail.com">
                 <Text
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
@@ -286,52 +252,56 @@ import {
                   color="brand.black"
                   _hover={{ color: 'brand.black' }}
                 >
-                  Class Plans
+                  Event
+                </Text>
+              </Link>
+              <Link w="full" target="_blank" href="mailto: perxels@gmail.com">
+                <Text
+                  w="full"
+                  fontSize={['lg', 'xl', '2xl']}
+                  textAlign="left"
+                  color="brand.black"
+                  _hover={{ color: 'brand.black' }}
+                >
+                 Join Community
                 </Text>
               </Link>
             </VStack>
+            <VStack alignItems="flex-start">
+              <Text
+                fontSize="1rem"
+                fontWeight="600"
+                color="brand.black"
+                textTransform="uppercase"
+                textAlign="left"
+              >
+                NewsLetter
+              </Text>
+              
+              <Flex>
+                    <Input placeholder="Email Address"  
+                      type="email"
+                      background="#fff"
+                      border="0px"
+                      width="60%"
+                    />
+                    <Button
+                    width="40%"
+                    fontSize="1.125rem"
+                    fontWeight="400"
+                    borderRadius="0"
+                    >Subscribe</Button>
+                </Flex>
+            </VStack>
           </SimpleGrid>
   
-          <VStack
-            display={['flex', 'flex', 'flex', 'none']}
-            alignItems="flex-start"
-            mt="1.5rem"
-            spacing="1.5rem"
-          >
-            <Flex alignItems="center" gap="0.75rem" mt="1.875rem">
-              {/* {FooterSocialLinks.map(({ name, url, icon }) => {
-                if (name !== 'WhatsApp') {
-                  return (
-                    <a key={name} href={url} target="_blank" rel="noreferrer">
-                      <Center
-                        w="1.875rem"
-                        h="1.875rem"
-                        bg="brand.white"
-                        rounded="full"
-                      >
-                        <Icon
-                          as={icon}
-                          w="0.875rem"
-                          h="0.875rem"
-                          fontSize="0.875rem"
-                          color="brand.purple.500"
-                        />
-                      </Center>
-                    </a>
-                  )
-                }
-              })} */}
-            </Flex>
-  
-            {/* <Logo color="white" width="107px" height="29.32px" /> */}
-          </VStack>
-  
+         
           <Text
             textAlign="left"
             fontSize="lg"
             mt={['3.125rem', '3.125rem', '5rem']}
             mb="1.5rem"
-            color="brand.white"
+            color="brand.black"
           >
             © Perxels 2023, All Rights Reserved.
           </Text>

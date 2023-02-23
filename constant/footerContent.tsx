@@ -61,31 +61,31 @@ export const links = [
       },
     ],
   },
-  {
-    title: 'Class Plans',
-    links: [
-      {
-        name: 'Basic Class',
-        url: '/',
-      },
-      {
-        name: 'Advanced Class',
-        url: '/',
-      },
-      {
-        name: 'Premium Class',
-        url: '/',
-      },
-      {
-        name: 'International',
-        url: '/',
-      },
-      {
-        name: 'Community',
-        url: '',
-      },
-    ],
-  },
+  // {
+  //   title: 'Class Plans',
+  //   links: [
+  //     {
+  //       name: 'Basic Class',
+  //       url: '/',
+  //     },
+  //     {
+  //       name: 'Advanced Class',
+  //       url: '/',
+  //     },
+  //     {
+  //       name: 'Premium Class',
+  //       url: '/',
+  //     },
+  //     {
+  //       name: 'International',
+  //       url: '/',
+  //     },
+  //     {
+  //       name: 'Community',
+  //       url: '',
+  //     },
+  //   ],
+  // },
   // {
   //   title: 'Newsletter',
   //   links: [
