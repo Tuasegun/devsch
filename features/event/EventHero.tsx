@@ -92,12 +92,12 @@ export const EventHero = () => {
           <Box
             className="speaker-section"
             mt={{ base: 4, md: 16 }}
-            mb={{ base: 3.5, md: 10 }}
+            mb={{ base: "2rem", md: 10 }}
             width={{ base: '100%', lg: '100%' }}
 
           >
-            <Image src="/assets/images/event/eventProduct.png" alt="speakerImg" />
-            {/* <Text
+            {/* <Image src="/assets/images/event/eventProduct.png" alt="speakerImg" /> */}
+            <Text
               fontSize={{ base: '0.9rem', lg: '1.25rem' }}
               fontWeight={'bold'}
               color={'brand.gray.400'}
@@ -105,12 +105,12 @@ export const EventHero = () => {
               mb={{ base: 2, md: 4 }}
             >
               Speaker:
-            </Text> */}
-            {/* <Flex alignItems={'center'} columnGap={'0.725625rem'}>
+            </Text>
+            <Flex alignItems={'center'} columnGap={'0.725625rem'}>
               <Box boxSize={{ base: '5.1875rem', lg: '7.5rem' }}>
                 <Img
                   borderRadius={'50%'}
-                  src={bannerContent.bannerImage}
+                  src={"assets/images/speakers/odejobi.png"}
                   alt="speakerImg"
                 />
               </Box>
@@ -120,16 +120,16 @@ export const EventHero = () => {
                   fontWeight={'bold'}
                   color={'brand.dark.100'}
                 >
-                  {bannerContent.speakerName}
+                 David Odejobi
                 </Text>
                 <Text
                   fontSize={{ base: '0.806875rem', lg: '1.25rem' }}
                   color="#5F6368"
                 >
-                  {bannerContent.speakerRole}
+                 Data Analyst & Writer
                 </Text>
               </Box>
-            </Flex> */}
+            </Flex>
           </Box>
 
           {/* event description */}

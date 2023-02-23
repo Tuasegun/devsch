@@ -134,9 +134,7 @@ export const Testimonial = () => {
                 {TestimonialContent[slideIndex0].name}
               </Text>
 
-              <Text fontWeight="500">
-                {TestimonialContent[slideIndex0].role}
-              </Text>
+            
             </Box>
           </Flex>
         </Box>

@@ -71,6 +71,36 @@ export const ViewBlogContent = () => {
                 <Text mt="1.25rem" mb="1.25rem"fontSize={["1.125rem","1.3125rem"]} lineHeight={["2.1938rem", "2.5594rem"]}>
                     {content[0]?.content4}
                 </Text>
+                <Text mt="1.25rem" mb="1.25rem"fontSize={["1.125rem","1.3125rem"]} lineHeight={["2.1938rem", "2.5594rem"]}>
+                    {content[0]?.content5}
+                </Text>
+                <Text mt="1.25rem" mb="1.25rem"fontSize={["1.125rem","1.3125rem"]} lineHeight={["2.1938rem", "2.5594rem"]}>
+                    {content[0]?.content6}
+                </Text>
+                <Text mt="1.25rem" mb="1.25rem"fontSize={["1.125rem","1.3125rem"]} lineHeight={["2.1938rem", "2.5594rem"]}>
+                    {content[0]?.content7}
+                </Text>
+                <Text mt="1.25rem" mb="1.25rem"fontSize={["1.125rem","1.3125rem"]} lineHeight={["2.1938rem", "2.5594rem"]}>
+                    {content[0]?.content8}
+                </Text>
+                <Text mt="1.25rem" mb="1.25rem"fontSize={["1.125rem","1.3125rem"]} lineHeight={["2.1938rem", "2.5594rem"]}>
+                    {content[0]?.content9}
+                </Text>
+                <Text mt="1.25rem" mb="1.25rem"fontSize={["1.125rem","1.3125rem"]} lineHeight={["2.1938rem", "2.5594rem"]}>
+                    {content[0]?.content10}
+                </Text>
+                <Text mt="1.25rem" mb="1.25rem"fontSize={["1.125rem","1.3125rem"]} lineHeight={["2.1938rem", "2.5594rem"]}>
+                    {content[0]?.content11}
+                </Text>
+                <Text mt="1.25rem" mb="1.25rem"fontSize={["1.125rem","1.3125rem"]} lineHeight={["2.1938rem", "2.5594rem"]}>
+                    {content[0]?.content12}
+                </Text>
+                <Text mt="1.25rem" mb="1.25rem"fontSize={["1.125rem","1.3125rem"]} lineHeight={["2.1938rem", "2.5594rem"]}>
+                    {content[0]?.content13}
+                </Text>
+                <Text mt="1.25rem" mb="1.25rem"fontSize={["1.125rem","1.3125rem"]} lineHeight={["2.1938rem", "2.5594rem"]}>
+                    {content[0]?.content14}
+                </Text>
             </Box>
 
             <Box>

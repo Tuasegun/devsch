@@ -30,19 +30,19 @@ export const Tools = () => {
             justifyContent="space-between"
           >
             <Box
-              border="5px solid #3D7535"
+              border="1px solid #3D7535"
               borderRadius="50%"
               padding="8px"
               boxSize="5.673125rem"
             >
               <Image
                 borderRadius="50%"
-                src="assets/images/enrol/html.png"
+                src="assets/images/enrol/angular.png"
                 alt="figma"
               />
             </Box>
             <Box
-              border="5px solid #3D7535"
+              border="1px solid #3D7535"
               boxSize="5.673125rem"
               borderRadius="50%"
               padding="8px"
@@ -54,7 +54,7 @@ export const Tools = () => {
               />
             </Box>
             <Box
-              border="5px solid #3D7535"
+              border="1px solid #3D7535"
               boxSize="5.673125rem"
               borderRadius="50%"
               padding="8px"
@@ -68,27 +68,29 @@ export const Tools = () => {
           </Box>
           <Box display="flex" justifyContent="space-around">
             <Box
-              border="5px solid #3D7535"
+              border="1px solid #3D7535"
               borderRadius="50%"
               padding="8px"
               boxSize="5.673125rem"
             >
               <Image
                 borderRadius="50%"
-                src="assets/images/enrol/html.png"
+                src="assets/images/enrol/react.png"
                 alt="figma"
+                objectPosition={"right center"}
+                
               />
             </Box>
 
             <Box
-              border="5px solid #3D7535"
+              border="1px solid #3D7535"
               borderRadius="50%"
               padding="8px"
               boxSize="5.673125rem"
             >
               <Image
                 borderRadius="50%"
-                src="assets/images/enrol/html.png"
+                src="assets/images/enrol/cast.png"
                 alt="figma"
               />
             </Box>

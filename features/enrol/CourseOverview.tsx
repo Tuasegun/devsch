@@ -143,6 +143,8 @@ export const CourseOverview = () => {
             ]}
             bg="#FAFAFA"
             w={["99%"]}
+            maxHeight="766px"
+            overflowY="scroll"
           >
             <Heading
               fontSize={["1.4375rem", "25px"]}
@@ -199,7 +201,7 @@ export const CourseOverview = () => {
               Understanding the web
             </Heading>
 
-            <Box>
+            <Box mb="2.8125rem">
               <List spacing={3}>
                 {content.understandWeb2.map((item, index) => (
                   <ListItem fontSize="1.125rem" key={index}>
@@ -209,6 +211,143 @@ export const CourseOverview = () => {
                 ))}
               </List>
             </Box>
+
+            <Heading
+              fontSize={["1.25rem", "25px"]}
+              color="brand.black"
+              fontWeight={500}
+            >
+             Introduction to interface development
+            </Heading>
+
+            <Box mb="2.8125rem">
+              <List spacing={3}>
+                {content.interfaceDevelopment.map((item, index) => (
+                  <ListItem fontSize="1.125rem" key={index}>
+                    <ListIcon as={BsCheck} color="brand.green.400" />
+                    {item}
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+
+          
+            <Heading
+              fontSize={["1.25rem", "25px"]}
+              color="brand.black"
+              fontWeight={500}
+            >
+            Semantics and accessibility
+            </Heading>
+
+            <Box mb="2.8125rem">
+              <List spacing={3}>
+                {content.semantics.map((item, index) => (
+                  <ListItem fontSize="1.125rem" key={index}>
+                    <ListIcon as={BsCheck} color="brand.green.400" />
+                    {item}
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+            
+            <Heading
+              fontSize={["1.25rem", "25px"]}
+              color="brand.black"
+              fontWeight={500}
+            >
+        Semantics and accessibility
+            </Heading>
+
+            <Box mb="2.8125rem">
+              <List spacing={3}>
+                {content.semantics2.map((item, index) => (
+                  <ListItem fontSize="1.125rem" key={index}>
+                    <ListIcon as={BsCheck} color="brand.green.400" />
+                    {item}
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+
+            <Heading
+              fontSize={["1.25rem", "25px"]}
+              color="brand.black"
+              fontWeight={500}
+            >
+       Introduction to javascript
+            </Heading>
+
+            <Box mb="2.8125rem">
+              <List spacing={3}>
+                {content.introtojavascript.map((item, index) => (
+                  <ListItem fontSize="1.125rem" key={index}>
+                    <ListIcon as={BsCheck} color="brand.green.400" />
+                    {item}
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+            
+            <Heading
+              fontSize={["1.25rem", "25px"]}
+              color="brand.black"
+              fontWeight={500}
+            >
+      Tooling
+            </Heading>
+
+            <Box mb="2.8125rem">
+              <List spacing={3}>
+                {content.tooling.map((item, index) => (
+                  <ListItem fontSize="1.125rem" key={index}>
+                    <ListIcon as={BsCheck} color="brand.green.400" />
+                    {item}
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+
+            <Heading
+              fontSize={["1.25rem", "25px"]}
+              color="brand.black"
+              fontWeight={500}
+            >
+              Javascript framework: React
+            </Heading>
+
+            <Box mb="2.8125rem">
+              <List spacing={3}>
+                {content?.framework.map((item, index) => (
+                  <ListItem fontSize="1.125rem" key={index}>
+                    <ListIcon as={BsCheck} color="brand.green.400" />
+                    {item}
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+
+
+            <Heading
+              fontSize={["1.25rem", "25px"]}
+              color="brand.black"
+              fontWeight={500}
+            >
+          Introduction to API
+            </Heading>
+
+            <Box mb="2.8125rem">
+              <List spacing={3}>
+                {content.apiIntro.map((item, index) => (
+                  <ListItem fontSize="1.125rem" key={index}>
+                    <ListIcon as={BsCheck} color="brand.green.400" />
+                    {item}
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+
+
           </Box>
           <Box height={["auto","100%"]} width="1%" background="red">
             <Box

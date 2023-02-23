@@ -48,13 +48,7 @@ export const MobileTestimonial = () => {
     customPaging: (i: any) => (
       <div
         style={
-          {
-            // width: "10px",
-            // height: "10px",
-            // borderRadius: "50%",
-            // border: "1px solid #2E6B26",
-            // background: "transparent"
-          }
+          {}
         }
         key={i}
       />
@@ -100,9 +94,6 @@ export const MobileTestimonial = () => {
                   mb=".6875rem"
                 >
                   {item.name}
-                </Text>
-                <Text fontSize="1.125rem" lineHeight="170%">
-                  {item.role}
                 </Text>
               </Box>
             </Box>

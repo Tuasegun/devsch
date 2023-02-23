@@ -37,22 +37,22 @@ export const FooterSocialLinks: FooterSocialLink[] = [
 
 export const links = [
   {
-    title: 'Services',
+    title: 'Quick Links',
     links: [
       {
-        name: 'About us',
-        url: '/',
-      },
-      {
-        name: 'Contact us',
-        url: '/',
-      },
-      {
-        name: 'Courses',
+        name: 'Course Overview',
         url: '/',
       },
       {
         name: 'Testimonials',
+        url: '/',
+      },
+      {
+        name: 'Blog',
+        url: '/',
+      },
+      {
+        name: 'Event',
         url: '/',
       },
       {
@@ -86,17 +86,17 @@ export const links = [
       },
     ],
   },
-  {
-    title: 'Newsletter',
-    links: [
-      {
-        name: 'perxels@gmail.com',
-        url: 'mailto:perxels@gmail.com',
-      },
-      {
-        name: '+2348135369680',
-        url: 'tel:+2348135369680',
-      },
-    ],
-  },
+  // {
+  //   title: 'Newsletter',
+  //   links: [
+  //     {
+  //       name: 'perxels@gmail.com',
+  //       url: 'mailto:perxels@gmail.com',
+  //     },
+  //     {
+  //       name: '+2348135369680',
+  //       url: 'tel:+2348135369680',
+  //     },
+  //   ],
+  // },
 ]

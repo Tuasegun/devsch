@@ -1,5 +1,6 @@
 import React from 'react'
 import {Box, Text, Heading, SimpleGrid, Button, Image, Flex} from '@chakra-ui/react'
+import {HeroAnimation} from './HeroAnimation'
 import Link from 'next/link'
 export const Hero = () => {
   return (
@@ -31,7 +32,7 @@ export const Hero = () => {
                     </Heading>
 
                     <Text maxW="29.25rem" mb={"2.75rem"} fontWeight="300" fontSize={["1.125rem","1.145rem"]} lineHeight={["1.8rem","2.09375rem"]}>
-                    Learn how to code, build products and solve problems for users while adding value to businesses with technology.
+                    Start your journey as a Frontend Developer. You’ll learn all you need to know to become a Frontend Developer and build exciting portfolios.
                     </Text>
 
                     <Link href="/courses">
@@ -47,34 +48,7 @@ export const Hero = () => {
 
 
                   {/* pictures */}
-                <Box
-                   width={["100%", "100%", "100%", "55%"]}
-                display={['block', 'block', 'block', 'flex']}
-                columnGap={"26px"}
-                alignItems="center"
-
-                >
-                    <Box
-                    width={["100%","50.875rem"]}
-                    height={["auto","31.6875rem"]}
-                    >
-                        <Image height="100%" width="100%" objectFit={"cover"}   src="assets/images/home/heroImage1.png" alt="hero"  borderRadius=".8319rem"/>
-                    </Box>
-                    <Box
-                    display={['none', 'none', 'none', 'block']}
-                    width={"15.75rem"}
-                    height="31.6875rem"
-                    >
-                        <Image height="100%" width="100%" objectFit={"cover"} src="assets/images/home/heroImage2.png" alt="hero"  objectPosition={"20% top"} borderRadius=".8319rem"/>
-                    </Box>
-                    <Box
-                    display={['none', 'none', 'none', 'block']}
-                    width={"15.75rem"}
-                    height="31.6875rem"
-                    >
-                        <Image height="100%" width="100%" objectFit={"cover"} src="assets/images/home/heroImage3.png" alt="hero" objectPosition={"80% top"} borderRadius=".8319rem"/>
-                    </Box>
-                </Box>
+                <HeroAnimation/>
             </Flex>
           
     </Box>

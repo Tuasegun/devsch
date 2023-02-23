@@ -12,7 +12,8 @@ import {
     SimpleGrid,
     Text,
     VStack,
-    Image
+    Image,
+    Input,
   } from '@chakra-ui/react'
   import React from 'react'
   import { FooterSocialLinks, links } from '../constant'
@@ -64,7 +65,7 @@ import {
             display={['none', 'none', 'none', 'grid']}
             mt="4.125rem"
             templateColumns="repeat(6, 1fr)"
-            gap={6}
+            gap={5}
           >
             <GridItem colSpan={3} w="100%">
               {/* <Logo color="white" /> */}
@@ -100,10 +101,11 @@ import {
                     </Center>
                   </a>
                 ))}
+
               </Flex>
             </GridItem>
             {links.map(({ title, links }) => (
-              <GridItem key={title} colSpan={1} w="100%">
+              <GridItem key={title} colSpan={0.5} w="100%">
                 <Text color="brand.black" fontSize="1.125rem" fontWeight="bold">
                   {title}
                 </Text>
@@ -128,8 +130,34 @@ import {
                     </Link>
                   ))}
                 </VStack>
+          
               </GridItem>
             ))}
+              <GridItem colSpan={0.5} w="100%">
+                <Text color="brand.black" fontSize="1.125rem" fontWeight="bold" mb="1.375rem">
+                    News Letter
+                </Text>
+                <Text
+                fontSize="1.145rem"
+                mb=".9625rem"
+                >
+                Get real time update from us
+                </Text>
+                <Flex>
+                    <Input placeholder="Email Address"  
+                      type="email"
+                      background="#fff"
+                      border="0px"
+                      width="60%"
+                    />
+                    <Button
+                    width="40%"
+                    fontSize="1.125rem"
+                    fontWeight="400"
+                    borderRadius="0"
+                    >Subscribe</Button>
+                </Flex>
+              </GridItem>
           </Grid>
   
           {/* mobile cta. */}
