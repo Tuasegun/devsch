@@ -42,8 +42,8 @@ export const EventHero = () => {
                 <RiTimer2Line />
               </Text>
               <Text
-                fontSize={{ base: '0.7rem', lg: '1.295rem' }}
-                fontWeight={'300'}
+                fontSize={{ base: '0.7rem', lg: '.9356rem' }}
+                fontWeight={'500'}
               >
                 7pm -  8pm (WAT)
               </Text>
@@ -61,8 +61,8 @@ export const EventHero = () => {
                 <AiOutlineCalendar />
               </Text>
               <Text
-                fontSize={{ base: '0.7rem', lg: '1.295rem' }}
-                fontWeight={'300'}
+                fontSize={{ base: '0.7rem', lg: '.9356rem' }}
+                fontWeight={'500'}
               >
                 27th February, 2023
               </Text>
@@ -80,8 +80,8 @@ export const EventHero = () => {
                 <Img src="/assets/icons/gps.svg" alt="location" />
               </Box>
               <Text
-                fontSize={{ base: '0.7rem', lg: '1.295rem' }}
-                fontWeight={'300'}
+                fontSize={{ base: '0.7rem', lg: '.9356rem' }}
+                fontWeight={'500'}
               >
                 Google Meet
               </Text>

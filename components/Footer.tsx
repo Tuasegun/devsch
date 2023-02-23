@@ -211,7 +211,7 @@ import {
                 Quick Links
               </Text>
   
-              <Link w="full" target="_blank" href="mailto: perxels@gmail.com">
+              <Link w="full" target="_blank" href="/enrol">
                 <Text
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
@@ -222,7 +222,7 @@ import {
                   Course Overview
                 </Text>
               </Link>
-              <Link w="full" target="_blank" href="mailto: perxels@gmail.com">
+              <Link w="full"  href="/#testimonials">
                 <Text
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
@@ -233,7 +233,7 @@ import {
                   Testimonials
                 </Text>
               </Link>
-              <Link w="full" target="_blank" href="mailto: perxels@gmail.com">
+              <Link w="full"  href="/blog">
                 <Text
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
@@ -244,7 +244,7 @@ import {
                   Blog
                 </Text>
               </Link>
-              <Link w="full" target="_blank" href="mailto: perxels@gmail.com">
+              <Link w="full"  href="/event">
                 <Text
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}
@@ -255,7 +255,7 @@ import {
                   Event
                 </Text>
               </Link>
-              <Link w="full" target="_blank" href="mailto: perxels@gmail.com">
+              <Link w="full"  href="/">
                 <Text
                   w="full"
                   fontSize={['lg', 'xl', '2xl']}

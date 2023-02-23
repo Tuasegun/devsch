@@ -9,16 +9,16 @@ export const HeaderDropdown = ({ setShowDropdown }: { setShowDropdown: any }) =>
         <Link onClick={() => setShowDropdown(false)} href="/">
           <Text fontSize="xl">Home</Text>
         </Link>
-        <Link onClick={() => setShowDropdown(false)} href="/testimonials">
+        <Link onClick={() => setShowDropdown(false)} href="/event">
           <Text fontSize="xl">Events</Text>
         </Link>
-        <Link onClick={() => setShowDropdown(false)} href="/studentprojects">
+        <Link onClick={() => setShowDropdown(false)} href="/blog">
           <Text fontSize="xl">Blogs</Text>
         </Link>
       
         {/* change button content */}
         <Link onClick={() => setShowDropdown(false)} href="/enrol">
-          <Button>View class plan</Button>
+          <Button>View </Button>
         </Link>
       </Flex>
     </Center>

@@ -40,12 +40,7 @@ export const ViewBlogContent = () => {
             <Heading as="h1" fontSize={["1.125rem","2.625rem"]} mb="12px" color="#434343" >
                 {content[0]?.title}
             </Heading>
-            <Text fontSize={[".9537rem","21.4608px"]} fontWeight={500} color="brand.black">
-                {content[0]?.authorName} 
-               <Text as="span"  ml=".3125rem" color="brand.black" fontWeight={300}>
-               ||  {content[0]?.duration}
-                </Text>
-            </Text>
+          
             <Box
             width="full"
             height={["16.0119rem","32.625rem"]}

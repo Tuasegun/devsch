@@ -41,19 +41,19 @@ export const links = [
     links: [
       {
         name: 'Course Overview',
-        url: '/',
+        url: '/enrol',
       },
       {
         name: 'Testimonials',
-        url: '/',
+        url: '/#testimonials',
       },
       {
         name: 'Blog',
-        url: '/',
+        url: '/blog',
       },
       {
         name: 'Event',
-        url: '/',
+        url: '/event',
       },
       {
         name: 'Join community',

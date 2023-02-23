@@ -40,14 +40,14 @@ export const Header = ({isWhite = false}) => {
               fontWeight={300}
               >Home</Text>
             </Link>
-            <Link href="/">
+            <Link href="/event">
               <Text
               fontSize="1.145rem"
               lineHeight="1.9725rem"
               fontWeight={300}
               >Events</Text>
             </Link>
-            <Link href="/">
+            <Link href="/blog">
               <Text
               fontSize="1.145rem"
               lineHeight="1.9725rem"
@@ -56,11 +56,13 @@ export const Header = ({isWhite = false}) => {
             </Link>
           </Flex>
 
+          <Link href="/enrol">
           <Button
           py={[4, 4, 4, "1.8625rem", "1.8625rem"]}
           px={[8, 8, 8, "2.0rem", "2.0rem"]}
           display={['none', "flex"]}
           >View class plan</Button>
+        </Link>
 
           <Icon 
           as = {showDropdown ? MdCancel : RiMenu3Line}

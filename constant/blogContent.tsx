@@ -1,8 +1,6 @@
 export interface BlogInterface {
   id?: number;
   title: string;
-  authorName: string;
-  duration: string;
   previewText: string;
   content1?: string;
   content2?: string;
@@ -25,8 +23,6 @@ export const BlogContents: BlogInterface[] = [
   {
     id: 1,
     title: "Front-end Development: The Latest Trends and The Future",
-    authorName: "Tolu Oluyole",
-    duration: "3 min read",
     previewText:
       "In the fast-paced world of technology, front-end development has come a lon...",
     content1:
@@ -58,11 +54,9 @@ export const BlogContents: BlogInterface[] = [
     id: 2,
     title:
       "Exploring the Latest Advancements in Artificial Intelligence and Machine Learning",
-    authorName: "Tolu Oluyole",
-    duration: "3 min read",
     image: "/assets/images/blog/blogImage2.png",
     previewText:
-      "Artificial Intelligence and Machine Learning are two of the most exciting and rapidly ...",
+      "Artificial Intelligence and Machine Learning are two of the most exciting...",
     content1:
       "Artificial Intelligence and Machine Learning are two of the most exciting and rapidly evolving fields in technology today. From computer vision to natural language processing, these technologies are changing the way we live and work, providing new and innovative solutions to complex problems. In this article, we will explore the latest advancements in AI and ML and look at how they are impacting various industries and changing our lives.",
     content2: "Computer Vision",
@@ -91,8 +85,6 @@ export const BlogContents: BlogInterface[] = [
   {
     id: 3,
     title: "A comprehensive guide to Progressive Web Apps (PWAs)",
-    authorName: "Tolu Oluyole",
-    duration: "3 min read",
     image: "/assets/images/blog/blogImage3.png",
     previewText:
       "The world of mobile applications has shifted dramatically over the last few ye ...",

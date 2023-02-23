@@ -44,12 +44,12 @@ export const Goals = () => {
         </Box>
         <Box>
             <Heading
-            fontSize={['2.05375rem', '2.05375rem', '2.05375rem', '4.19760625rem', '3.19760625em']}
+            fontSize={['1.9rem', '1.9rem', '1.9rem', '3.19760625em']}
             fontWeight={700}
             color="#2E6B26"
             lineHeight={["2.8rem","2.8rem","3rem","3.7625rem"]}
             >
-            1,000+ <Text as="span" fontWeight={"600"} fontSize="2.5rem" color="#2E6B26">SKILLED SOFTWARE DEVELOPERS IN 3 YEARS</Text>
+            1,000+ <Text as="span" fontWeight={"600"} fontSize={['1.5625rem', '1.5625rem', '1.5625rem',"2.5rem"]} color="#2E6B26">SKILLED SOFTWARE DEVELOPERS IN 3 YEARS</Text>
             </Heading>
         </Box>
         </Box>

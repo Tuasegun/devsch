@@ -52,7 +52,7 @@ export const Testimonial = () => {
 
   return (
     <MainContainer>
-      <Center display="flex" flexDirection="column">
+      <Center display="flex" flexDirection="column" id="testimonials">
         <Heading
           fontSize="35px"
           lineHeight="50.3px"

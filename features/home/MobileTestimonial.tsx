@@ -23,7 +23,7 @@ export const MobileTestimonial = () => {
   const settings = {
     dots: true,
     infinite: true,
-    rows: 2,
+    rows: 1,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
