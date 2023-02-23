@@ -9,7 +9,7 @@ export const ContentGrid = () => {
         <Box py="6.1875rem">
             <SimpleGrid columns={[1, 2, 3]} spacing="30px">
                 {
-                    BlogContents.map(({image, title, duration, previewText, authorName, id}) => {
+                    BlogContents.map(({image, title, previewText, id}) => {
                         return (
                             <ContentCard
                                 key={id}
@@ -17,8 +17,6 @@ export const ContentGrid = () => {
                                 title={title}
                                 image={image}
                                 previewText={previewText}
-                                duration={duration}
-                                authorName={authorName}
                             />
                         )
                     })
