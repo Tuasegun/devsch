@@ -13,7 +13,7 @@ import {
 import { MainContainer } from "@/layouts/MainContainer";
 import { BsCheck } from "react-icons/bs";
 import { CourseOverviewContents } from "@/constant";
-
+import Link from 'next/link'
 export const CourseOverview = () => {
   const content = CourseOverviewContents;
   return (
@@ -134,22 +134,37 @@ export const CourseOverview = () => {
               {content.internship}
             </Text>
           </Box>
+          <Box
+          display={['none', 'none', 'none', 'block']}
+          >
+            <Link href="/signup">
+            <Button w="full"
+            borderRadius="0"
+            padding="2.3125rem"
+            fontSize="30.36px"
+            >
+             Enroll for this plan
+            </Button>
+            </Link>
+          </Box>
         </Box>
         <Box display={"flex"} w={["100%", "100%", "100%", "65%"]}>
           <Box
             padding={[
-              "1.75rem 2% 0.625rem 2.875rem",
+              "1.75rem 2% 0.625rem 1.575rem",
               "1.75rem 20% 0.625rem 2.875rem",
             ]}
             bg="#FAFAFA"
             w={["99%"]}
-            maxHeight="766px"
+            maxHeight={["auto","870px"]}
             overflowY="scroll"
           >
             <Heading
               fontSize={["1.4375rem", "25px"]}
               color="brand.black"
               fontWeight={700}
+              mb="1.0625rem"
+              lineHeight="1.8313rem"
             >
               Course Overview
             </Heading>
@@ -367,6 +382,19 @@ export const CourseOverview = () => {
             />
           </Box>
         </Box>
+        <Box
+          display={['block', 'block', 'block', 'none']}
+          >
+            <Link href="/signup">
+            <Button w="full"
+            borderRadius="0"
+            padding="2.3125rem"
+            fontSize="1.875rem"
+            >
+             Enroll for this plan
+            </Button>
+            </Link>
+          </Box>
       </Box>
     </MainContainer>
   );

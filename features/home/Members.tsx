@@ -67,6 +67,8 @@ export const Members = () => {
                                 Community members
                             </Heading>
 
+
+                            <a href="https://chat.whatsapp.com/JkH714GssRYLvcDZXBWfDt">
                             <Button
                                 bg="brand.white"
                                 color="brand.green.400"
@@ -75,6 +77,7 @@ export const Members = () => {
                             >
                                 Join community
                             </Button>
+                            </a>
                         </Box>
                     </Center>
 
@@ -95,17 +98,7 @@ export const Members = () => {
                     }
                 </Grid>
 
-                {/* <Grid templateColumns={["repeat(2,1fr)","repeat(5, 1fr)"]} gap={["0.7rem","1.156875rem"]} display={["grid", "none"]}>
-                    {
-                        members.splice(0, 4).map((member, index) => (
-                            <GridItem key={index} colSpan={1}>
-                                <Image h={["auto","16.613125rem"]} w="100%" src={member.image} alt="member" />
-                            </GridItem>
-                        ))
-                        
-                    }
-                </Grid> */}
-
+              
             </Box>
             </MainContainer>
         </Box>

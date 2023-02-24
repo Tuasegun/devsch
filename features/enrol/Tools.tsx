@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Image, Flex, Button, Heading } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, Button, Heading, Center } from "@chakra-ui/react";
 import { MainContainer } from "@/layouts/MainContainer";
 export const Tools = () => {
   return (
@@ -29,71 +29,111 @@ export const Tools = () => {
             display="flex"
             justifyContent="space-between"
           >
+            <Center
+            flexDirection="column"
+            >
             <Box
               border="1px solid #3D7535"
               borderRadius="50%"
-              padding="8px"
-              boxSize="5.673125rem"
+              padding="8px"  
             >
               <Image
                 borderRadius="50%"
+                boxSize="5.673125rem"
                 src="assets/images/enrol/angular.png"
                 alt="figma"
               />
             </Box>
+
+            <Text mt="11px">
+              Angular JS
+            </Text>
+
+            </Center>
+           
+            <Center
+            flexDirection="column"
+            >
             <Box
               border="1px solid #3D7535"
-              boxSize="5.673125rem"
               borderRadius="50%"
               padding="8px"
             >
               <Image
-                borderRadius="50%"
+                boxSize="5.673125rem"
                 src="assets/images/enrol/html2.png"
                 alt="git"
               />
+
             </Box>
+            <Text mt="11px">
+              HTML
+            </Text>
+            </Center>
+
+            <Center
+            flexDirection="column"
+            >
             <Box
-              border="1px solid #3D7535"
-              boxSize="5.673125rem"
+              border="1px solid #3D7535" 
               borderRadius="50%"
               padding="8px"
             >
               <Image
+                boxSize="5.673125rem"
                 borderRadius="50%"
                 src="assets/images/enrol/css3.png"
                 alt="github"
               />
             </Box>
+            <Text mt="11px">
+              CSS
+            </Text>
+            </Center>
           </Box>
           <Box display="flex" justifyContent="space-around">
+          <Center
+            flexDirection="column"
+            >
             <Box
               border="1px solid #3D7535"
               borderRadius="50%"
               padding="8px"
-              boxSize="5.673125rem"
+            
             >
               <Image
                 borderRadius="50%"
                 src="assets/images/enrol/react.png"
                 alt="figma"
                 objectPosition={"right center"}
-                
+                boxSize="5.673125rem"
               />
             </Box>
+            <Text mt="11px">
+              React
+            </Text>
+          </Center>
 
+          <Center
+            flexDirection="column"
+            >
             <Box
               border="1px solid #3D7535"
               borderRadius="50%"
               padding="8px"
-              boxSize="5.673125rem"
+            
             >
               <Image
-                borderRadius="50%"
+                boxSize="5.673125rem"
+              
                 src="assets/images/enrol/cast.png"
                 alt="figma"
               />
             </Box>
+            <Text mt="11px">
+              Jquery
+            </Text>
+            </Center>
           </Box>
         </Box>
       </Flex>

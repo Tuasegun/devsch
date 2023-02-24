@@ -35,7 +35,7 @@ export const Hero = () => {
                     Start your journey as a Frontend Developer. You’ll learn all you need to know to become a Frontend Developer and build exciting portfolios.
                     </Text>
 
-                    <Link href="/courses">
+                    <Link href="/enrol">
                     <Button  
                     py={[4, 4, 4, "29.8px", "1.8625rem"]}
                     px={"3.625rem"}

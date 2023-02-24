@@ -14,6 +14,19 @@ export const EventHero = () => {
         gap={12}
       >
         <Box>
+                    <Text
+                     bg="brand.green.200"
+                     display={"inline-flex"}
+                     p=".5rem 1.1062rem"
+                     alignItems="center"
+                     color="brand.green.400"
+                     borderRadius={".375rem"}
+                     fontSize=".9375rem"
+                     mb={["1.9375rem","2.1875rem"]}
+                     transform={"uppercase"}
+                    >
+                   Free AMA session
+                    </Text>
           <Heading
             fontSize={{ base: '2.375rem', md: '2.375rem', lg: '3.125rem' }}
             color="brand.dark.100"

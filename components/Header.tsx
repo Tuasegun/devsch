@@ -20,12 +20,14 @@ export const Header = ({isWhite = false}) => {
       bg="none"
       >
         <Flex justifyContent="space-between" alignItems="center">
+          
           <Box 
           h={["2.0981rem", "2.0981rem", "2.0981rem", "43px", "43px"]}
           w={["8.8125rem", "8.8125rem", "8.8125rem", "181px", "181px"]}
           >
            {
-              showDropdown ? " " : <Image src="/assets/icons/schfordevslogo.svg" alt="logo" />
+              showDropdown ? " " :
+            <Link href="/"><Image src="/assets/icons/schfordevslogo.svg" alt="logo" /></Link>
            }
           </Box>
 

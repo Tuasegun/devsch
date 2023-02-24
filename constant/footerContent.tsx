@@ -52,7 +52,7 @@ export const links = [
         url: '/blog',
       },
       {
-        name: 'Event',
+        name: 'Events',
         url: '/event',
       },
       {

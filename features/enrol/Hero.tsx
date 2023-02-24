@@ -29,12 +29,13 @@ export const Hero = () => {
                      fontSize=".9375rem"
                      mb={["1.9375rem","2.75rem"]}
                     >
-                  <AiFillThunderbolt/>{" "}Learn frontend development skills 
+                  <AiFillThunderbolt/>{" "}From beginner to professional level
                     </Text>
 
                     <Heading
                     fontSize={["2rem","2.375rem","3.1125rem"]}
                     lineHeight={["2.8rem","3.0875rem","3.9144rem"]}
+                    mb="2.25rem"
                     >
                     Learn frontend development skills 
                     </Heading>

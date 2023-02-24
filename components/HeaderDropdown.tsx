@@ -13,12 +13,12 @@ export const HeaderDropdown = ({ setShowDropdown }: { setShowDropdown: any }) =>
           <Text fontSize="xl">Events</Text>
         </Link>
         <Link onClick={() => setShowDropdown(false)} href="/blog">
-          <Text fontSize="xl">Blogs</Text>
+          <Text fontSize="xl">Blog</Text>
         </Link>
       
         {/* change button content */}
         <Link onClick={() => setShowDropdown(false)} href="/enrol">
-          <Button>View </Button>
+          <Button>View Class Plan </Button>
         </Link>
       </Flex>
     </Center>

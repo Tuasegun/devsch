@@ -6,7 +6,7 @@ import { BlogContents } from '@/constant'
 export const ContentGrid = () => {
   return (
     <MainContainer>
-        <Box py="6.1875rem">
+        <Box pt="5.1875rem">
             <SimpleGrid columns={[1, 2, 3]} spacing="30px">
                 {
                     BlogContents.map(({image, title, previewText, id}) => {

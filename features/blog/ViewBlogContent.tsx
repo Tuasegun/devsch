@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import { useRouter } from 'next/router'
 import { MainContainer } from '@/layouts/MainContainer'
 import {BlogContents, BlogInterface} from '../../constant'
-import {Box, Text, Image, Flex, Button, Heading, HStack} from '@chakra-ui/react'
-import {AiOutlineWhatsApp,  AiOutlineLinkedin} from 'react-icons/ai'
+import {Box, Text, Image, Flex, Button, Heading, HStack, useClipboard} from '@chakra-ui/react'
+import {AiOutlineWhatsApp,  AiOutlineLinkedin, AiOutlineLink, AiOutlineCheck} from 'react-icons/ai'
 import {SlSocialTwitter} from 'react-icons/sl'
 import { BsArrowLeft } from 'react-icons/bs'
 import { TwitterShareButton, LinkedinShareButton,  WhatsappShareButton} from 'next-share'
@@ -11,6 +11,8 @@ export const ViewBlogContent = () => {
     const router = useRouter()
     const { blogId } = router.query
     const [content, setContent] = useState<BlogInterface[]>([])
+
+    const { hasCopied, onCopy } = useClipboard(`https://schfordevs.vercel.app/${blogId}`);
 
     React.useEffect(() => {
         if (blogId) {
@@ -28,7 +30,7 @@ export const ViewBlogContent = () => {
         pt="33px"
         pb="107px"
         >
-            <HStack mb="12px" cursor={"pointer"}>
+            <HStack mb={["2.9375rem","12px"]} cursor={"pointer"}>
                 <Text>
                     <BsArrowLeft size={30} onClick={() => router.push('/blog')} />
                 </Text>
@@ -47,11 +49,11 @@ export const ViewBlogContent = () => {
             position="relative"
             mt="36px"
             >
-                <Image height="100%" width={"100%"} objectFit={["contain","cover"]} src={content[0]?.image} alt={content[0]?.title} />
+                <Image height="100%" width={"100%"} objectFit={["cover","cover"]} src={content[0]?.image} alt={content[0]?.title} />
             </Box>
             <Box
             position={"relative"}
-            mt="66px"
+            mt={["40px","66px"]}
             >
                 <Text fontSize={["1.125rem","1.3125rem"]} mb="1.25rem">
                     {content[0]?.content1}
@@ -143,7 +145,13 @@ export const ViewBlogContent = () => {
                         </Box>
                     </LinkedinShareButton>
 
-
+                    <Box>
+                    <Box bg="#EEF8EC"  color="#2E6B26"  p={[".5rem",".8125rem"]} onClick={onCopy}>
+                           {
+                                 hasCopied ? <AiOutlineCheck size={30} /> : <AiOutlineLink size={30} />
+                           }
+                        </Box>
+                    </Box>
 
                 </Flex>
             </Box>

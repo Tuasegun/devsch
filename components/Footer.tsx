@@ -38,7 +38,7 @@ import {
             display={['flex', 'flex', 'flex', 'flex']}
             mb={"3.8125rem"}
           >
-            <Text fontSize={["1.2925rem","4xl"]} color="brand.white" fontWeight="bold" mb={["18px", "0"]}>
+            <Text fontSize={["1.125rem","4xl"]} color="brand.white" fontWeight="bold" mb={["18px", "0"]}>
             Ready to talk? We're here to help
             </Text>
   
@@ -73,12 +73,12 @@ import {
               <Text
                 mt="0.75rem"
                 fontWeight={300}
-                fontSize="1.145rem"
+                fontSize="1.125rem"
                 lineHeight="2.09375rem"
                 maxW="366px"
                 color="#434343"
               >
-               Schfordevs provides the next generation of developers everything they need to succeed in a competitive  Schfordevs provides the next generation of developers everything they.
+              At schfordevs, you will learn how to code, build products and solve problems for users while adding value to businesses with technology.
               </Text>
   
               <Flex alignItems="center" gap="0.75rem" mt="1.875rem">
@@ -121,9 +121,9 @@ import {
                       <Text
                         w="full"
                         textAlign="left"
-                        fontSize="0.875rem"
+                        fontSize="1.125rem"
                         color="brand.black"
-                        _hover={{ color: 'brand.yellow.500' }}
+                        _hover={{ color: 'brand.green.400' }}
                       >
                         {name}
                       </Text>
@@ -138,7 +138,7 @@ import {
                     News Letter
                 </Text>
                 <Text
-                fontSize="1.145rem"
+                 fontSize="1.125rem"
                 mb=".9625rem"
                 >
                 Get real time update from us
@@ -172,15 +172,35 @@ import {
               maxW="100%"
               fontWeight={400}
               color="brand.black"
+              lineHeight="2.09375rem"
             >
-              Schfordevs provides the next generation{' '}
-              <Box as="span" color="brand.yellow.500">
-                {' '}
-                of developers everything they need to succeed in a competitive  
-              </Box>{' '}
-              Schfordevs provides the next generation of developers everything they.
+             At schfordevs, you will learn how to code, build products and solve problems for users while adding value to businesses with technology.
             </Heading>
-  
+
+            <Flex alignItems="center" gap="0.75rem" mt="1.875rem">
+            {FooterSocialLinks.map(({ name, url, icon }) => {
+              if (name !== 'WhatsApp') {
+                return (
+                  <a key={name} href={url} target="_blank" rel="noreferrer">
+                    <Center
+                      w="1.875rem"
+                      h="1.875rem"
+                      bg="brand.white"
+                      rounded="full"
+                    >
+                      <Icon
+                        as={icon}
+                        w="0.875rem"
+                        h="0.875rem"
+                        fontSize="0.875rem"
+                        color="brand.black"
+                      />
+                    </Center>
+                  </a>
+                )
+              }
+            })}
+          </Flex>
             <Box mt="1.5rem" display={['block', 'block', 'block', 'none']}>
 {/*              
               <Button
@@ -200,13 +220,14 @@ import {
             columns={1}
             gap="1rem"
           >
-            <VStack alignItems="flex-start">
+            <VStack alignItems="flex-start" mb="1rem">
               <Text
-                fontSize="1rem"
+                fontSize="1.125rem"
                 fontWeight="600"
                 color="brand.black"
                 textTransform="uppercase"
                 textAlign="left"
+                mb="1rem"
               >
                 Quick Links
               </Text>
@@ -214,7 +235,7 @@ import {
               <Link w="full" target="_blank" href="/enrol">
                 <Text
                   w="full"
-                  fontSize={['lg', 'xl', '2xl']}
+                  fontSize="1.125rem"
                   textAlign="left"
                   color="brand.black"
                   _hover={{ color: 'brand.black' }}
@@ -225,7 +246,7 @@ import {
               <Link w="full"  href="/#testimonials">
                 <Text
                   w="full"
-                  fontSize={['lg', 'xl', '2xl']}
+                  fontSize="1.125rem"
                   textAlign="left"
                   color="brand.black"
                   _hover={{ color: 'brand.black' }}
@@ -236,7 +257,7 @@ import {
               <Link w="full"  href="/blog">
                 <Text
                   w="full"
-                  fontSize={['lg', 'xl', '2xl']}
+                  fontSize="1.125rem"
                   textAlign="left"
                   color="brand.black"
                   _hover={{ color: 'brand.black' }}
@@ -247,7 +268,7 @@ import {
               <Link w="full"  href="/event">
                 <Text
                   w="full"
-                  fontSize={['lg', 'xl', '2xl']}
+                  fontSize="1.125rem"
                   textAlign="left"
                   color="brand.black"
                   _hover={{ color: 'brand.black' }}
@@ -258,7 +279,7 @@ import {
               <Link w="full"  href="/">
                 <Text
                   w="full"
-                  fontSize={['lg', 'xl', '2xl']}
+                  fontSize="1.125rem"
                   textAlign="left"
                   color="brand.black"
                   _hover={{ color: 'brand.black' }}
@@ -269,7 +290,7 @@ import {
             </VStack>
             <VStack alignItems="flex-start">
               <Text
-                fontSize="1rem"
+                fontSize="1.125rem"
                 fontWeight="600"
                 color="brand.black"
                 textTransform="uppercase"
@@ -277,7 +298,12 @@ import {
               >
                 NewsLetter
               </Text>
-              
+              <Text
+                fontSize="1.125rem"
+                mb=".9625rem"
+                >
+                Get real time update from us
+                </Text>
               <Flex>
                     <Input placeholder="Email Address"  
                       type="email"

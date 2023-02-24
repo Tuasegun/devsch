@@ -11,7 +11,7 @@ export const Case = () => {
         p={["0", "1.875rem 1.875rem 2.8125rem 3.8125rem"]}
         alignItems="center"
         borderRadius="0.3125rem"
-        my={["8.625rem", "1.875rem"]}
+        my={["8.625rem", "3.875rem"]}
         flexDir={["column", "row"]}
       >
         <Box

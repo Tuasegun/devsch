@@ -75,7 +75,7 @@ export const HeroAnimation = () => {
         <Box
           position="absolute"
           bg="#FFFFFF"
-          padding=".75rem .9181rem 2rem .6875rem"
+          padding=".75rem .9181rem .6875rem .6875rem"
           zIndex="3"
           top="80%"
           left="50%"
@@ -112,7 +112,7 @@ export const HeroAnimation = () => {
         <Box
           position="absolute"
           bg="#FFFFFF"
-          padding=".75rem .9181rem 2rem .6875rem"
+          padding=".75rem .9181rem .6875rem .6875rem"
           zIndex="3"
           top="80%"
           left="50%"
@@ -149,7 +149,7 @@ export const HeroAnimation = () => {
         <Box
           position="absolute"
           bg="#FFFFFF"
-          padding=".75rem .9181rem 2rem .6875rem"
+          padding=".75rem .9181rem .6875rem .6875rem"
           zIndex="3"
           top="80%"
           left="50%"

@@ -46,9 +46,9 @@ const SuccessModal = ({
             <Center>
               <Box
                 mb={['1rem', '1rem', '1rem', '1.4375rem']}
-                boxSize="9.8125rem"
+               
               >
-                <Img src="/assets/icons/modalcon.svg" alt="success" />
+                <Img border="5px solid #2E6B26" borderRadius="50%"  boxSize="9.8125rem" src="/assets/icons/modalcon.png" alt="success" />
               </Box>
             </Center>
             <Center>

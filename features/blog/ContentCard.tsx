@@ -14,7 +14,7 @@ export const ContentCard = ({
     as="a"
     href={`/blog/${id}`}
     >
-      <Image src={image} alt={title} />
+      <Image height={"225px"} width="full" objectFit="cover" src={image} alt={title} />
       <Box
       p={["1.9375rem 1.375rem 3.3125rem 1.6875rem"]}
       bg="#FAFAFA"
