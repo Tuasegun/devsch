@@ -38,10 +38,13 @@ export const Tools = () => {
               padding="8px"  
             >
               <Image
-                borderRadius="50%"
+                width="100%"
+                height="100%"
+                // borderRadius="50%"
                 boxSize="5.673125rem"
                 src="assets/images/enrol/angular.png"
                 alt="figma"
+                objectFit="cover"
               />
             </Box>
 

@@ -120,11 +120,13 @@ export const EventHero = () => {
               Speaker:
             </Text>
             <Flex alignItems={'center'} columnGap={'0.725625rem'}>
-              <Box boxSize={{ base: '5.1875rem', lg: '7.5rem' }}>
+              <Box>
                 <Img
+                boxSize={{ base: '5.1875rem', lg: '7.5rem' }}
                   borderRadius={'50%'}
                   src={"assets/images/speakers/odejobi.png"}
                   alt="speakerImg"
+                  objectFit="cover"
                 />
               </Box>
               <Box>
