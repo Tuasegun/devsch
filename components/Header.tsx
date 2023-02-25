@@ -39,21 +39,21 @@ export const Header = ({isWhite = false}) => {
               <Text
               fontSize="1.145rem"
               lineHeight="1.9725rem"
-              fontWeight={300}
+              fontWeight={400}
               >Home</Text>
             </Link>
             <Link href="/event">
               <Text
               fontSize="1.145rem"
               lineHeight="1.9725rem"
-              fontWeight={300}
+              fontWeight={400}
               >Events</Text>
             </Link>
             <Link href="/blog">
               <Text
               fontSize="1.145rem"
               lineHeight="1.9725rem"
-              fontWeight={300}
+              fontWeight={400}
               >Blog</Text>
             </Link>
           </Flex>

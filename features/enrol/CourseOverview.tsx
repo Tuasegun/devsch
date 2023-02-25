@@ -34,7 +34,7 @@ export const CourseOverview = () => {
             ]}
             mb="1.3125rem"
           >
-            <Text fontSize={"1.125rem"} color="brand.black" fontWeight={300}>
+            <Text fontSize={"1.125rem"} color="brand.black" fontWeight={400}>
               Price
             </Text>
 
@@ -78,7 +78,7 @@ export const CourseOverview = () => {
             ]}
             mb="1.3125rem"
           >
-            <Text fontSize={"1.125rem"} color="brand.black" fontWeight={300}>
+            <Text fontSize={"1.125rem"} color="brand.black" fontWeight={400}>
               Schedule
             </Text>
 

@@ -80,7 +80,7 @@ export const MobileTestimonial = () => {
               <Text
                 mb="2.5625rem"
                 fontSize="1.125rem"
-                fontWeight="300"
+                fontWeight="400"
                 lineHeight="1.9125rem"
               >
                 {item.testimony}
@@ -105,7 +105,7 @@ export const MobileTestimonial = () => {
         position="absolute"
         bottom="10%"
         >
-          <Text color="#2E6B26" fontSize="30px" fontWeight={300}>
+          <Text color="#2E6B26" fontSize="30px" fontWeight={400}>
             <BsArrowLeftCircle onClick={previous} />
           </Text>
         </Box>

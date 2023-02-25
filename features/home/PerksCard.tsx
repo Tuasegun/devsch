@@ -17,7 +17,7 @@ export const PerksCard = ({title, image, description}: PerksInterface) => {
             <Text
             fontSize="1.145rem"
             lineHeight="2.09375rem"
-            fontWeight="300"
+            fontWeight="400"
             >
                 {description}
             </Text>

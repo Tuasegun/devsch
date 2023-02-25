@@ -127,6 +127,7 @@ export const EventHero = () => {
                   src={"assets/images/speakers/odejobi.png"}
                   alt="speakerImg"
                   objectFit="cover"
+                  objectPosition={"top center"}
                 />
               </Box>
               <Box>

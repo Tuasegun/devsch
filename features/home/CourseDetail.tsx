@@ -10,6 +10,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { MainContainer } from "@/layouts/MainContainer";
+import Link from 'next/link'
 export const CourseDetail = () => {
   return (
     <MainContainer>
@@ -108,7 +109,7 @@ export const CourseDetail = () => {
               fontSize={["1.125rem", "1.145rem"]}
               lineHeight={["170%", "2.09375rem"]}
               color="#434343"
-              fontWeight="300"
+              fontWeight="400"
             >
               The frontend development training is designed to equip you with
               the skills to write codes in HTML, JAVASCRIPT, REACTJS to create
@@ -134,7 +135,7 @@ export const CourseDetail = () => {
               <Text
                 color="#2E6B26"
                 fontSize={["1rem", "1.125rem"]}
-                fontWeight={"300"}
+                fontWeight={"400"}
               >
                 You will earn an accredited certificate
               </Text>
@@ -143,7 +144,7 @@ export const CourseDetail = () => {
               <Text
                 color="#2E6B26"
                 fontSize={["1rem", "1.125rem"]}
-                fontWeight={"300"}
+                fontWeight={"400"}
                 bg="brand.green.200"
                 p="1.1875rem"
                 borderRadius="0.375rem"
@@ -154,6 +155,8 @@ export const CourseDetail = () => {
           </Flex>
 
           <Flex mt="1.75rem" columnGap={["0.5rem", "1.513125rem"]}>
+           
+           <Link href="/enrol">
             <Button
               py={[4, 4, 4, "29.8px", "1.8625rem"]}
               px={["1.5rem", "3.625rem"]}
@@ -161,7 +164,9 @@ export const CourseDetail = () => {
             >
               See Details
             </Button>
+            </Link>
             <Box>
+            <Link href="/signup">
               <Button
                 bg="brand.white"
                 color="brand.green.400"
@@ -175,6 +180,7 @@ export const CourseDetail = () => {
               >
                 Enrol Now
               </Button>
+              </Link>
             </Box>
           </Flex>
         </Box>

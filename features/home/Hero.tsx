@@ -31,8 +31,8 @@ export const Hero = () => {
                     Launch your career in Software development
                     </Heading>
 
-                    <Text maxW="29.25rem" mb={"2.75rem"} fontWeight="300" fontSize={["1.125rem","1.145rem"]} lineHeight={["1.8rem","2.09375rem"]}>
-                    Start your journey as a Frontend Developer. You’ll learn all you need to know to become a Frontend Developer and build exciting portfolios.
+                    <Text maxW="29.25rem" mb={"2.75rem"} fontWeight="400" fontSize={["1.125rem","1.145rem"]} lineHeight={["1.8rem","2.09375rem"]}>
+                    Learn how to code, build products and solve problems for users while adding value to businesses with technology.
                     </Text>
 
                     <Link href="/enrol">
