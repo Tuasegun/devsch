@@ -93,7 +93,7 @@ export const BlogContents: BlogInterface[] = [
       "How this technology is enabling web developers to build fast, reliable, and engaging apps that can work offline, reach a wider audience, and provide a native app-like experience.",
 
     content2:
-      "The world of mobile applications has shifted dramatically over the last few years. In addition to native mobile applications, web developers now have a powerful new tool in their arsenal: Progressive Web Apps (PWAs). ",
+      "The world of mobile application has shifted dramatically over the last few years. In addition to native mobile applications, web developers now have a powerful new tool in their arsenal: Progressive Web Apps (PWAs). ",
 
     content3:
       "PWAs are web apps that use modern web technologies to provide a user experience that is fast, reliable, and engaging. By leveraging the web, PWAs can reach a wider audience, work offline, and provide a native app-like experience. In this guide, we’ll explore what PWAs are and how they are being used to create fast, engaging, and reliable web apps. We’ll also discuss the key components of PWAs that make them so powerful and provide an example of a PWA in action. ",
