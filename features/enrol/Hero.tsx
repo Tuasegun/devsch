@@ -52,9 +52,7 @@ export const Hero = () => {
           </Heading>
 
           <Text fontWeight={400} fontSize="18px" lineHeight="2.0938rem">
-            Go from zero knowledge to being able to create the front-end
-            interface of any website, mobile application and
-            Software-as-a-Service.
+          Go from zero knowledge to being able to create the front-end interface of any website. Be able to build products in HTML, JavaScript, CSS and React Js framework
           </Text>
         </Box>
         <Box

@@ -57,7 +57,7 @@ export const Testimonial = () => {
   useLayoutEffect(() => {
     const testimonial = testimonialRef.current
     let ctx = gsap.context(() =>{
-      gsap.from(testimonial, { 
+      gsap.from('.testimonialClass', { 
         opacity: '0',
         duration: 2,
         y: 200,
@@ -85,11 +85,13 @@ export const Testimonial = () => {
           Hear what they are saying about us
         </Text>
       </Center>
+
+      <Box position="relative">
       <Box
         display={["none", "none", "flex", "flex"]}
         columnGap={"2.375rem"}
         pt="4rem"
-        ref={testimonialRef}
+      // className="testimonialClass"
       >
         {/* incativeboxleft */}
         <Box
@@ -196,6 +198,7 @@ export const Testimonial = () => {
             />
           </Box>
         </Box>
+      </Box>
       </Box>
       <Box display={["block", "block", "none", "none"]} mt="1.9312rem">
         <MobileTestimonial />

@@ -103,7 +103,7 @@ export const MobileTestimonial = () => {
       <Box display="flex">
         <Box 
         position="absolute"
-        bottom="10%"
+        bottom="14%"
         >
           <Text color="#2E6B26" fontSize="30px" fontWeight={400}>
             <BsArrowLeftCircle onClick={previous} />
@@ -111,7 +111,7 @@ export const MobileTestimonial = () => {
         </Box>
         <Box
          position="absolute"
-         bottom="10%"
+         bottom="14%"
          right="0"
         >
           <Text color="#2E6B26" fontSize="30px" >

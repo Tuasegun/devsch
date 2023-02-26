@@ -3,8 +3,8 @@ import { ComponentStyleConfig } from "@chakra-ui/theme";
 export const Button: ComponentStyleConfig = {
     baseStyle: {
       bg: '#2E6B26',
-      fontWeight: '700',
-      fontSize: ['0.853rem', '0.853rem', 'xl'],
+      fontWeight: '600',
+      fontSize: ['0.853rem', '0.853rem', '20.36px'],
       borderRadius: '7.12638px',
       color: 'brand.white',
       px: ['1.5rem', '1.5rem', '2.25rem'],
@@ -29,8 +29,8 @@ export const Button: ComponentStyleConfig = {
       link: {
         padding: 0,
         color: 'brand.purple.500',
-        fontWeight: '700',
-        fontSize: '1.125rem',
+        fontWeight: '600',
+        fontSize: '20.36px',
         backgroundColor: 'transparent',
         _hover: {
           textDecoration: 'none',
@@ -41,8 +41,8 @@ export const Button: ComponentStyleConfig = {
       },
       solid: {
         bg: 'brand.green.400',
-        fontWeight: '700',
-        fontSize: ['0.853rem', '0.853rem', 'xl'],
+        fontWeight: '600',
+        fontSize: ['0.853rem', '0.853rem', '20.36px'],
         borderRadius: '7.12638px',
         color: 'brand.white',
         px: '2.174375rem',
@@ -57,7 +57,7 @@ export const Button: ComponentStyleConfig = {
       'solid-white': {
         bg: 'brand.white',
         color: 'brand.purple.500',
-        fontWeight: '700',
+        fontWeight: '600',
         transition: 'all 0.35s ease-in-out',
         _hover: {
           bg: 'brand.yellow.700',
@@ -70,8 +70,8 @@ export const Button: ComponentStyleConfig = {
       },
       'rounded-solid': {
         bg: 'brand.white',
-        fontWeight: '700',
-        fontSize: ['0.853rem', '0.853rem', 'xl'],
+        fontWeight: '600',
+        fontSize: ['0.853rem', '0.853rem', '1.2725rem'],
         borderRadius: '30px',
         color: 'brand.purple.500',
         px: '2.25rem',
@@ -94,8 +94,8 @@ export const Button: ComponentStyleConfig = {
       },
       'rounded-solid-yellow-with-outline': {
         bg: 'brand.yellow.700',
-        fontWeight: '700',
-        fontSize: ['0.853rem', '0.853rem', 'xl'],
+        fontWeight: '600',
+        fontSize: ['0.853rem', '0.853rem', '20.36px'],
         borderRadius: '30px',
         color: 'brand.purple.500',
         px: '6.875rem',

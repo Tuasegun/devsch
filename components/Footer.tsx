@@ -329,7 +329,7 @@ import {
             mb="1.5rem"
             color="brand.black"
           >
-            © SchForDevs 2023, All Rights Reserved.
+            © schfordevs 2023, All Rights Reserved.
           </Text>
         </Box>
       </MainContainer>

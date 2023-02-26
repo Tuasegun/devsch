@@ -99,7 +99,7 @@ export const EventHero = () => {
                 fontSize={{ base: '0.7rem', lg: '.9356rem' }}
                 fontWeight={'500'}
               >
-                27th February, 2023
+                19th February, 2023
               </Text>
             </Box>
             <Box

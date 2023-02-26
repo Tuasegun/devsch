@@ -93,7 +93,7 @@ export const HeroAnimation = () => {
         </Box>
       </Box>
       <Box
-        width={["15.75rem"]}
+        width={["100%","15.75rem"]}
         height="31.6875rem"
         ref={boxTwo}
         position="relative"
