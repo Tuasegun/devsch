@@ -265,7 +265,7 @@ import {
                   Blog
                 </Text>
               </Link>
-              <Link w="full"  href="/event">
+              <Link w="full"  href="/events">
                 <Text
                   w="full"
                   fontSize="1.125rem"
@@ -273,7 +273,7 @@ import {
                   color="brand.black"
                   _hover={{ color: 'brand.black' }}
                 >
-                  Event
+                  Events
                 </Text>
               </Link>
               <Link w="full"  href="/">
@@ -329,7 +329,7 @@ import {
             mb="1.5rem"
             color="brand.black"
           >
-            © Perxels 2023, All Rights Reserved.
+            © SchForDevs 2023, All Rights Reserved.
           </Text>
         </Box>
       </MainContainer>

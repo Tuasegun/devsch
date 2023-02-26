@@ -1,7 +1,27 @@
-import React from "react";
+import React, {useLayoutEffect, useRef} from "react";
 import { Box, Text, Image, Flex, Button, Heading, Center } from "@chakra-ui/react";
 import { MainContainer } from "@/layouts/MainContainer";
+import gsap from 'gsap'
+
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 export const Tools = () => {
+  const toolsRef = useRef<HTMLDivElement>(null)
+  useLayoutEffect(() => {
+    const tools = toolsRef.current
+    let ctx = gsap.context(() =>{
+      gsap.from(tools, { 
+        opacity: '0',
+        duration: 2,
+        y: 200,
+        delay: 1,
+        scrollTrigger: {
+          trigger: tools,
+        }
+      })
+    })
+    return () => ctx.revert()
+  })
   return (
     <MainContainer>
       <Flex
@@ -9,6 +29,7 @@ export const Tools = () => {
         flexDirection={["column", "column", "column", "column", "row"]}
         py={[8, 8, 8, 8, 16]}
         rowGap={[8, 8, 8, 8, 0]}
+        ref={toolsRef}
       >
         <Box maxW={["100%", "35%"]}>
           <Heading

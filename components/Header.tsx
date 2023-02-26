@@ -42,7 +42,7 @@ export const Header = ({isWhite = false}) => {
               fontWeight={400}
               >Home</Text>
             </Link>
-            <Link href="/event">
+            <Link href="/events">
               <Text
               fontSize="1.145rem"
               lineHeight="1.9725rem"

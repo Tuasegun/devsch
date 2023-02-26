@@ -9,7 +9,7 @@ export const HeaderDropdown = ({ setShowDropdown }: { setShowDropdown: any }) =>
         <Link onClick={() => setShowDropdown(false)} href="/">
           <Text fontSize="xl">Home</Text>
         </Link>
-        <Link onClick={() => setShowDropdown(false)} href="/event">
+        <Link onClick={() => setShowDropdown(false)} href="/events">
           <Text fontSize="xl">Events</Text>
         </Link>
         <Link onClick={() => setShowDropdown(false)} href="/blog">

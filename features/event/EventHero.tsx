@@ -1,13 +1,35 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Box, Flex, Heading, Text, Button, Grid, Img, List, OrderedList,ListItem, Image } from '@chakra-ui/react'
 import {MainContainer} from '@/layouts/MainContainer'
 import { RiTimer2Line } from 'react-icons/ri'
 import { AiOutlineCalendar } from 'react-icons/ai'
 import { EventForm } from './EventForm'
+
+import gsap from 'gsap'
+
 export const EventHero = () => {
+  const mainRef = useRef<HTMLDivElement>(null)
+  const tl = useRef<any>(gsap.timeline({ paused: true }))
+
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      tl.current
+        .from('.ama-title', { opacity: 0, y: 100, duration: 0.5, delay: 0.5 })
+        .from('.ama-main-title', { opacity: 0, y: 100, duration: 1 })
+        .from('.ama-other-content', { opacity: 0, y: 100, duration: 1 })
+        .from('.speaker-section', { opacity: 0, y: 100, duration: 1 })
+        .from('.speaker-form', { opacity: 0, y: 100, duration: 1 })
+        .from('.about-speaker', { opacity: 0, y: 100, duration: 1 })
+        .play()
+    }, mainRef)
+
+    return () => ctx.revert()
+  }, [])
+
+
   return (
     <MainContainer>
-    <Box py="2rem" w="full" >
+    <Box py="2rem" w="full" ref={mainRef}>
       <Grid
         w="full"
         templateColumns={['1fr', '1fr', '1fr', '1.5fr 1fr']}

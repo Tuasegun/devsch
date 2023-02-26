@@ -1,10 +1,30 @@
-import React from 'react'
+import React, {useLayoutEffect, useRef} from 'react'
 import {Box, Text, Heading, SimpleGrid, Button, Image, Flex} from '@chakra-ui/react'
 import {HeroAnimation} from './HeroAnimation'
 import Link from 'next/link'
+import gsap from 'gsap'
+
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+
 export const Hero = () => {
+  const heroRef = useRef<HTMLDivElement>(null)
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() =>{
+     //fade in on start
+      gsap.to(heroRef.current, { 
+        opacity: 1,
+        duration: 3,
+        y: 0,
+        x: 0,
+        delay: 1,
+      })
+    })
+    return () => ctx.revert()
+  }, [])
+
   return (
     <Box
+   
     bg="brand.green.300"
    pt={["30px", "50px", "50px", "3.9375rem"]}
     pb={["50px", "50px", "50px", "6.4375rem"]}
@@ -12,15 +32,19 @@ export const Hero = () => {
     pr={ ["1.25em", "1.25rem", "1.25rem", "0"]}
     pos="relative"
     height={["fit-content","100vh"]} 
+
     >
 
            
             <Flex 
             // columns={[1, 2]}
             alignItems="center"
+            //  className="Hero-Section"
             justifyContent="space-between"
             flexDirection={['column', 'column', 'column', 'row']}
             rowGap={["2.5rem", "2.5rem", "2.5rem", "0"]}
+            ref={heroRef}
+            opacity={0}
             // maxHeight={["100%", "100%", "100%", "31.6875rem"]}
             >
                  {/* text-box */}

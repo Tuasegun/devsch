@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
 import {
   Box,
   Text,
@@ -12,8 +12,12 @@ import { CgArrowLongLeft, CgArrowLongRight } from "react-icons/cg";
 import { MainContainer } from "@/layouts/MainContainer";
 import { TestimonialContent } from "@/constant";
 import { MobileTestimonial } from "./MobileTestimonial";
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 export const Testimonial = () => {
+  const testimonialRef = useRef<HTMLDivElement>(null)
   const [slideIndex0, setSlideIndex0] = useState(0);
   const [slideIndex1, setSlideIndex1] = useState(1);
   const [slideIndex2, setSlideIndex2] = useState(2);
@@ -50,9 +54,25 @@ export const Testimonial = () => {
     }
   };
 
+  useLayoutEffect(() => {
+    const testimonial = testimonialRef.current
+    let ctx = gsap.context(() =>{
+      gsap.from(testimonial, { 
+        opacity: '0',
+        duration: 2,
+        y: 200,
+        delay: 1,
+        scrollTrigger: {
+          trigger: testimonial,
+        }
+      })
+    })
+    return () => ctx.revert()
+  })
+
   return (
     <MainContainer>
-      <Center display="flex" flexDirection="column" id="testimonials">
+      <Center display="flex" flexDirection="column" id="testimonials" ref={testimonialRef}>
         <Heading
           fontSize="35px"
           lineHeight="50.3px"
@@ -69,6 +89,7 @@ export const Testimonial = () => {
         display={["none", "none", "flex", "flex"]}
         columnGap={"2.375rem"}
         pt="4rem"
+        ref={testimonialRef}
       >
         {/* incativeboxleft */}
         <Box

@@ -1,8 +1,28 @@
-import React from 'react'
+import React, {useLayoutEffect, useRef} from 'react'
 import {Box, Text, Image, Heading, Flex} from '@chakra-ui/react'
 import { MainContainer } from '@/layouts/MainContainer'
+import gsap from 'gsap'
+
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 export const Goals = () => {
+    const goalsRef = useRef<HTMLDivElement>(null)
+    useLayoutEffect(() => {
+        const goals = goalsRef.current
+        let ctx = gsap.context(() =>{
+            gsap.from(goals, { 
+                opacity: '0',
+                duration: 3,
+                y: 200,
+                delay: 1,
+                scrollTrigger: {
+                    trigger: goals,
+                }
+            })
+        })
+        return () => ctx.revert()
+    }, [])
   return (
     <Box
     position="relative"
@@ -13,12 +33,12 @@ export const Goals = () => {
    bg="none"
     >
     <Flex
-    
     justifyContent="space-between"
     alignItems={['flex-start', 'flex-start', 'flex-start', 'center', 'center']}
     py="2.8125rem"
     flexDirection={['column', 'column', 'column', 'row', 'row']}
     rowGap="3.069375rem"
+    ref={goalsRef}
     >
        
 

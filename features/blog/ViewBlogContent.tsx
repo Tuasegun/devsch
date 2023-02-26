@@ -32,7 +32,7 @@ export const ViewBlogContent = () => {
   const [content, setContent] = useState<BlogInterface[]>([]);
 
   const { hasCopied, onCopy } = useClipboard(
-    `https://schfordevs.vercel.app/${blogId}`
+    `https://schfordevs.com/${blogId}`
   );
 
   React.useEffect(() => {
@@ -203,7 +203,7 @@ export const ViewBlogContent = () => {
 
           <Flex columnGap={"6px"}>
             <WhatsappShareButton
-              url={`https://schfordevs.vercel.app/${blogId}`}
+              url={`https://schfordevs.com/${blogId}`}
               title={content[0]?.title}
             >
               <Box bg="#EEF8EC" color="#2E6B26" p={[".5rem", ".8125rem"]}>
@@ -212,7 +212,7 @@ export const ViewBlogContent = () => {
             </WhatsappShareButton>
 
             <TwitterShareButton
-              url={`https://schfordevs.vercel.app/${blogId}`}
+              url={`https://schfordevs.com/${blogId}`}
               title={content[0]?.title}
             >
               <Box bg="#EEF8EC" color="#2E6B26" p={[".5rem", ".8125rem"]}>
@@ -221,7 +221,7 @@ export const ViewBlogContent = () => {
             </TwitterShareButton>
 
             <LinkedinShareButton
-              url={`https://schfordevs.vercel.app/${blogId}`}
+              url={`https://schfordevs.com/${blogId}`}
               title={content[0]?.title}
             >
               <Box bg="#EEF8EC" color="#2E6B26" p={[".5rem", ".8125rem"]}>

@@ -2,7 +2,23 @@ import { MainContainer } from "@/layouts/MainContainer";
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import { AiFillThunderbolt } from "react-icons/ai";
 import { EnrolFloat } from "./EnrolFloat";
+import {useLayoutEffect, useRef} from "react";
+import gsap from 'gsap'
+
 export const Hero = () => {
+  const heroRef = useRef<HTMLDivElement>(null)
+  useLayoutEffect(() => {
+    const hero = heroRef.current
+    let ctx = gsap.context(() =>{
+      gsap.from(hero, { 
+        opacity: '0',
+        duration: 3,
+        y: 0,
+        delay: 1,
+      })
+    })
+    return () => ctx.revert()
+  })
   return (
     <MainContainer bg="brand.green.300">
       <Box
@@ -11,6 +27,7 @@ export const Hero = () => {
         py="4.5rem"
         rowGap="3.875rem"
         justifyContent={"space-between"}
+        ref={heroRef}
       >
         <Box maxWidth={["90%", "100%", "100%", "100%", "40%"]}>
           <Text

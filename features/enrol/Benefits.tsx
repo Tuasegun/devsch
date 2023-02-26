@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useLayoutEffect, useRef} from 'react'
 import { Box, Text, Image, Flex, List, ListItem, ListIcon} from '@chakra-ui/react'
 import {BsCheck} from 'react-icons/bs'
-
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 const benefits = [
     "Beginner friendly",
     "Practical training",
@@ -9,6 +11,22 @@ const benefits = [
 ]
 
 export const Benefits = () => {
+    const benefitsRef = useRef<HTMLDivElement>(null)
+    useLayoutEffect(() => {
+        const benefits = benefitsRef.current
+        let ctx = gsap.context(() =>{
+            gsap.from(benefits, { 
+                opacity: '0',
+                duration: 2,
+                y: 0,
+                delay: 1,
+                scrollTrigger: {
+                    trigger: benefits,
+                }
+            })
+        })
+        return () => ctx.revert()
+    })
 
   return (
     <Box
@@ -16,6 +34,7 @@ export const Benefits = () => {
     bgImage={"url('/assets/images/enrol/benBgPattern.png')"}
     py="2.5rem"
     px={['1.5625rem', '1.5625rem', '1.5625rem', '10%', '10%']}
+    ref={benefitsRef}
     >
         <Box>
             <List

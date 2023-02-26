@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useLayoutEffect, useRef} from "react";
 import {
   Box,
   Heading,
@@ -11,7 +11,27 @@ import {
 } from "@chakra-ui/react";
 import { MainContainer } from "@/layouts/MainContainer";
 import Link from 'next/link'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
+
 export const CourseDetail = () => {
+  const courseRef = useRef<HTMLDivElement>(null)
+  useLayoutEffect(() => {
+    const course = courseRef.current
+    let ctx = gsap.context(() =>{
+      gsap.from(course, { 
+        opacity: '0',
+        duration: 3,
+        y: 200,
+        delay: 1,
+        scrollTrigger: {
+          trigger: course,
+        }
+      })
+    })
+    return () => ctx.revert()
+  })
   return (
     <MainContainer>
       <Box
@@ -20,6 +40,7 @@ export const CourseDetail = () => {
         flexDir={["column", "column", "column", "row"]}
         rowGap="3.153125rem"
         pb={["4.625rem", "10.125rem"]}
+        ref={courseRef}
       >
         <Box
           height={"auto"}

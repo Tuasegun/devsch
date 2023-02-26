@@ -238,7 +238,7 @@ return (
             <Select
              bg="brand.white"
               h="3.5rem"
-              placeholder="How did you get to know about Perxels?"
+              placeholder="How did you get to know about SchForDevs?"
               _placeholder={{ color: 'brand.dark.200' }}
               color="brand.dark.200"
               name="howdidyouknow"
