@@ -156,7 +156,7 @@ export const CourseDetail = () => {
               <Text
                 color="#2E6B26"
                 fontSize={["1rem", "1.125rem"]}
-                fontWeight={"400"}
+                fontWeight={"500"}
               >
                 You will earn an accredited certificate
               </Text>
@@ -165,7 +165,7 @@ export const CourseDetail = () => {
               <Text
                 color="#2E6B26"
                 fontSize={["1rem", "1.125rem"]}
-                fontWeight={"400"}
+                fontWeight={"500"}
                 bg="brand.green.200"
                 p="1.1875rem"
                 borderRadius="0.375rem"
@@ -179,9 +179,10 @@ export const CourseDetail = () => {
            
            <Link href="/enrol">
             <Button
-              py={[4, 4, 4, "29.8px", "1.8625rem"]}
-              px={["1.5rem", "3.625rem"]}
-              fontSize={["1.2725rem", "1.2725rem"]}
+              py={["1.8125rem", "29.8px", "1.8625rem"]}
+              px={["1.7rem", "20.3611px"]}
+              fontSize={["1rem", "1.2725rem"]}
+              w={["auto","213px"]}
             >
               See Details
             </Button>
@@ -194,9 +195,9 @@ export const CourseDetail = () => {
                 fontWeight={400}
                 border="1px solid #2E6B26"
                 borderRadius="0.44539875rem"
-                py={[4, 4, 4, "29.8px", "1.8625rem"]}
-                px={["1.5rem", "3.625rem"]}
-                fontSize="20.36px"
+                py={["1.8125rem", "29.8px", "1.8625rem"]}
+                px={["1.7rem", "20.3611px"]}
+                fontSize={["1rem","20.36px"]}
                 display={["inline-flex", "flex"]}
               >
                 Enrol Now

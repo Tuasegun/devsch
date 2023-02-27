@@ -71,13 +71,13 @@ export const Tools = () => {
                   height="100%"
                   // borderRadius="50%"
                   boxSize={["4.1463rem", "5.673125rem"]}
-                  src="assets/images/enrol/angular.png"
+                  src="assets/images/enrol/git.png"
                   alt="figma"
                   objectFit="cover"
                 />
               </Box>
 
-              <Text mt="11px">Angular JS</Text>
+              <Text mt="11px">Git</Text>
             </Center>
 
             <Center flexDirection="column">

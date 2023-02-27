@@ -50,7 +50,7 @@ import {
               color="brand.green.400"
               py={[4, 4, 4, "1.8625rem", "1.8625rem"]}
               px={"3.625rem"}
-              fontSize="20.36px"
+              fontSize="1rem"
             >
               Enroll Now
             </Button>

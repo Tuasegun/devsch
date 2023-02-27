@@ -61,9 +61,9 @@ export const Hero = () => {
 
                     <Link href="/enrol">
                     <Button  
-                    py={[4, 4, 4, "29.8px", "1.8625rem"]}
-                    px={"3.625rem"}
-                    fontSize="20.36px"
+                    py={["1.5rem", "29.8px", "1.8625rem"]}
+                    px={["3.2rem","3.625rem"]}
+                    fontSize={["1rem", "1.2725rem"]}
                     mr={4}>
                     Enroll now 
                     </Button>

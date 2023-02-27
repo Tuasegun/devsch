@@ -140,8 +140,9 @@ export const CourseOverview = () => {
             <Link href="/signup">
             <Button w="full"
             borderRadius="0"
-            padding="2.3125rem"
+            padding="1.875rem"
             fontSize="30.36px"
+            py="2.3125rem"
             >
              Enroll for this plan
             </Button>
@@ -178,11 +179,11 @@ export const CourseOverview = () => {
               Understanding the web
             </Heading>
 
-            <Box mb="2.8125rem">
+            <Box mb="2.8125rem" mt=".875rem">
               <List spacing={3}>
                 {content.understandWeb.map((item, index) => (
-                  <ListItem fontSize="1.125rem" key={index}>
-                    <ListIcon as={BsCheck} color="brand.green.400" />
+                  <ListItem fontSize="1.125rem" key={index} display="flex">
+                    <ListIcon as={BsCheck} color="brand.green.400"fontSize="1.7rem" />
                     {item}
                   </ListItem>
                 ))}
@@ -197,11 +198,11 @@ export const CourseOverview = () => {
               Introduction to interface development
             </Heading>
 
-            <Box mb="2.8125rem">
+            <Box mb="2.8125rem" mt=".875rem">
               <List spacing={3}>
                 {CourseOverviewContents.interfaceIntro.map((item, index) => (
-                  <ListItem fontSize="1.125rem" key={index}>
-                    <ListIcon as={BsCheck} color="brand.green.400" />
+                  <ListItem fontSize="1.125rem" key={index} display="flex">
+                    <ListIcon as={BsCheck} color="brand.green.400" fontSize="1.7rem" />
                     {item}
                   </ListItem>
                 ))}
@@ -218,11 +219,11 @@ export const CourseOverview = () => {
           Semantics and accessibility
             </Heading>
 
-            <Box mb="2.8125rem">
+            <Box mb="2.8125rem" mt=".875rem">
               <List spacing={3}>
                 {content.semantics.map((item, index) => (
-                  <ListItem fontSize="1.125rem" key={index}>
-                    <ListIcon as={BsCheck} color="brand.green.400" />
+                  <ListItem fontSize="1.125rem" key={index} display="flex">
+                    <ListIcon  as={BsCheck} color="brand.green.400"  fontSize="1.7rem"/>
                     {item}
                   </ListItem>
                 ))}
@@ -239,11 +240,11 @@ export const CourseOverview = () => {
        Introduction to javascript
             </Heading>
 
-            <Box mb="2.8125rem">
+            <Box mb="2.8125rem" mt=".875rem">
               <List spacing={3}>
                 {content.introtojavascript.map((item, index) => (
-                  <ListItem fontSize="1.125rem" key={index}>
-                    <ListIcon as={BsCheck} color="brand.green.400" />
+                  <ListItem fontSize="1.125rem" key={index} display="flex">
+                    <ListIcon as={BsCheck} color="brand.green.400" fontSize="1.7rem" />
                     {item}
                   </ListItem>
                 ))}
@@ -258,11 +259,11 @@ export const CourseOverview = () => {
       Tooling
             </Heading>
 
-            <Box mb="2.8125rem">
+            <Box mb="2.8125rem" mt=".875rem">
               <List spacing={3}>
                 {content.tooling.map((item, index) => (
-                  <ListItem fontSize="1.125rem" key={index}>
-                    <ListIcon as={BsCheck} color="brand.green.400" />
+                  <ListItem fontSize="1.125rem" key={index} display="flex">
+                    <ListIcon as={BsCheck} color="brand.green.400" fontSize="1.7rem" />
                     {item}
                   </ListItem>
                 ))}
@@ -277,11 +278,11 @@ export const CourseOverview = () => {
               Javascript framework: React
             </Heading>
 
-            <Box mb="2.8125rem">
+            <Box mb="2.8125rem" mt=".875rem">
               <List spacing={3}>
                 {content?.framework.map((item, index) => (
-                  <ListItem fontSize="1.125rem" key={index}>
-                    <ListIcon as={BsCheck} color="brand.green.400" />
+                  <ListItem fontSize="1.125rem" key={index} display="flex">
+                    <ListIcon as={BsCheck} color="brand.green.400" fontSize="1.7rem"/>
                     {item}
                   </ListItem>
                 ))}
@@ -297,11 +298,11 @@ export const CourseOverview = () => {
           Introduction to API
             </Heading>
 
-            <Box mb="2.8125rem">
+            <Box mb="2.8125rem" mt=".875rem">
               <List spacing={3}>
                 {content.apiIntro.map((item, index) => (
-                  <ListItem fontSize="1.125rem" key={index}>
-                    <ListIcon as={BsCheck} color="brand.green.400" />
+                  <ListItem fontSize="1.125rem" key={index} display="flex">
+                    <ListIcon as={BsCheck} color="brand.green.400" fontSize="1.7rem"/>
                     {item}
                   </ListItem>
                 ))}
@@ -335,7 +336,8 @@ export const CourseOverview = () => {
             <Button w="full"
             borderRadius="0"
             padding="2.3125rem"
-            fontSize="1.875rem"
+            fontSize="1.5rem"
+         
             >
              Enroll for this plan
             </Button>
