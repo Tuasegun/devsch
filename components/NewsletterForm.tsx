@@ -31,6 +31,7 @@ export const NewsletterForm = () => {
           .required("Email is required"),
       })}
       onSubmit={(values, action) => {
+      
         const formData = new FormData();
         formData.append("email", values.email as string);
         formData.append("created_at", new Date().toLocaleString());

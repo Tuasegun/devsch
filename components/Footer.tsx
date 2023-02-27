@@ -113,7 +113,7 @@ import {
                 <VStack mt="1.5rem" spacing="1.25rem">
                   {links.map(({ name, url }) => (
                     <Link
-                      target={name === 'Community' ? '_blank' : '_self'}
+                      target={name === 'Join Community' ? '_blank' : '_self'}
                       w="full"
                       key={name}
                       href={url}
@@ -263,7 +263,7 @@ import {
                   Events
                 </Text>
               </Link>
-              <Link w="full"  href="/">
+              <a w="full"  href="https://chat.whatsapp.com/JkH714GssRYLvcDZXBWfDt">
                 <Text
                   w="full"
                   fontSize="1.125rem"
@@ -273,7 +273,7 @@ import {
                 >
                  Join Community
                 </Text>
-              </Link>
+              </a>
             </VStack>
             <VStack alignItems="flex-start">
               <Text

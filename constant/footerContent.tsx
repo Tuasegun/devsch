@@ -57,7 +57,7 @@ export const links = [
       },
       {
         name: 'Join community',
-        url: '/',
+        url: 'https://chat.whatsapp.com/JkH714GssRYLvcDZXBWfDt',
       },
     ],
   },
