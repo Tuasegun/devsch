@@ -263,7 +263,7 @@ import {
                   Events
                 </Text>
               </Link>
-              <a w="full"  href="https://chat.whatsapp.com/JkH714GssRYLvcDZXBWfDt">
+              <Link w="full"  href="https://chat.whatsapp.com/JkH714GssRYLvcDZXBWfDt">
                 <Text
                   w="full"
                   fontSize="1.125rem"
@@ -273,7 +273,7 @@ import {
                 >
                  Join Community
                 </Text>
-              </a>
+              </Link>
             </VStack>
             <VStack alignItems="flex-start">
               <Text
