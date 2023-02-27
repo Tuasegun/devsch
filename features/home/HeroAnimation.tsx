@@ -10,38 +10,46 @@ export const HeroAnimation = () => {
   useEffect(() => {
     const mobileView = window.innerWidth < 768;
     const interval = setInterval(() => {
-      if (active === 1) {
-        setActive(2);
-        if (mobileView) {
-          boxOne.current!.style.width = "15.75rem";
-          boxTwo.current!.style.width = "100%";
-          boxThree.current!.style.width = "15.75rem";
-        } else {
-          boxOne.current!.style.width = "15.75rem";
-          boxTwo.current!.style.width = "50.875rem";
-          boxThree.current!.style.width = "15.75rem";
-        }
-      } else if (active === 2) {
-        setActive(3);
-        if (mobileView) {
-          boxOne.current!.style.width = "15.75rem";
-          boxTwo.current!.style.width = "15.75rem";
-          boxThree.current!.style.width = "100%";
-        } else {
-          boxOne.current!.style.width = "15.75rem";
-          boxTwo.current!.style.width = "15.75rem";
-          boxThree.current!.style.width = "50.875rem";
-        }
-      } else {
-        setActive(1);
-        if (mobileView) {
+      if(mobileView){
+        setActive(1)
+        if(active === 1){
+          setActive(1);
           boxOne.current!.style.width = "100%";
-          boxTwo.current!.style.width = "15.75rem";
-          boxThree.current!.style.width = "15.75rem";
+        }
+      }else{
+        if (active === 1) {
+          setActive(2);
+          if (mobileView) {
+            boxOne.current!.style.width = "15.75rem";
+            boxTwo.current!.style.width = "100%";
+            boxThree.current!.style.width = "15.75rem";
+          } else {
+            boxOne.current!.style.width = "15.75rem";
+            boxTwo.current!.style.width = "50.875rem";
+            boxThree.current!.style.width = "15.75rem";
+          }
+        } else if (active === 2) {
+          setActive(3);
+          if (mobileView) {
+            boxOne.current!.style.width = "15.75rem";
+            boxTwo.current!.style.width = "15.75rem";
+            boxThree.current!.style.width = "100%";
+          } else {
+            boxOne.current!.style.width = "15.75rem";
+            boxTwo.current!.style.width = "15.75rem";
+            boxThree.current!.style.width = "50.875rem";
+          }
         } else {
-          boxOne.current!.style.width = "50.875rem";
-          boxTwo.current!.style.width = "15.75rem";
-          boxThree.current!.style.width = "15.75rem";
+          setActive(1);
+          if (mobileView) {
+            boxOne.current!.style.width = "100%";
+            boxTwo.current!.style.width = "15.75rem";
+            boxThree.current!.style.width = "15.75rem";
+          } else {
+            boxOne.current!.style.width = "50.875rem";
+            boxTwo.current!.style.width = "15.75rem";
+            boxThree.current!.style.width = "15.75rem";
+          }
         }
       }
     }, 3000);
