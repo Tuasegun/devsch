@@ -208,51 +208,14 @@ export const CourseOverview = () => {
               </List>
             </Box>
 
-            <Heading
-              fontSize={["1.25rem", "25px"]}
-              color="brand.black"
-              fontWeight={500}
-            >
-              Understanding the web
-            </Heading>
-
-            <Box mb="2.8125rem">
-              <List spacing={3}>
-                {content.understandWeb2.map((item, index) => (
-                  <ListItem fontSize="1.125rem" key={index}>
-                    <ListIcon as={BsCheck} color="brand.green.400" />
-                    {item}
-                  </ListItem>
-                ))}
-              </List>
-            </Box>
-
-            <Heading
-              fontSize={["1.25rem", "25px"]}
-              color="brand.black"
-              fontWeight={500}
-            >
-             Introduction to interface development
-            </Heading>
-
-            <Box mb="2.8125rem">
-              <List spacing={3}>
-                {content.interfaceDevelopment.map((item, index) => (
-                  <ListItem fontSize="1.125rem" key={index}>
-                    <ListIcon as={BsCheck} color="brand.green.400" />
-                    {item}
-                  </ListItem>
-                ))}
-              </List>
-            </Box>
-
+           
           
             <Heading
               fontSize={["1.25rem", "25px"]}
               color="brand.black"
               fontWeight={500}
             >
-            Semantics and accessibility
+          Semantics and accessibility
             </Heading>
 
             <Box mb="2.8125rem">
@@ -266,24 +229,7 @@ export const CourseOverview = () => {
               </List>
             </Box>
             
-            <Heading
-              fontSize={["1.25rem", "25px"]}
-              color="brand.black"
-              fontWeight={500}
-            >
-        Semantics and accessibility
-            </Heading>
-
-            <Box mb="2.8125rem">
-              <List spacing={3}>
-                {content.semantics2.map((item, index) => (
-                  <ListItem fontSize="1.125rem" key={index}>
-                    <ListIcon as={BsCheck} color="brand.green.400" />
-                    {item}
-                  </ListItem>
-                ))}
-              </List>
-            </Box>
+          
 
             <Heading
               fontSize={["1.25rem", "25px"]}

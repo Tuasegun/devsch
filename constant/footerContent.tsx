@@ -15,12 +15,12 @@ interface FooterSocialLink {
 export const FooterSocialLinks: FooterSocialLink[] = [
   {
     name: 'Twitter',
-    url: '/',
+    url: 'https://www.twitter.com/schfordevs/',
     icon: FaTwitter,
   },
   {
     name: 'Instagram',
-    url: '/',
+    url: 'https://www.instagram.com/schfordevs/',
     icon: AiFillInstagram,
   },
   {

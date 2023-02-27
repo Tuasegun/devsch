@@ -20,7 +20,7 @@ import {
  import {MainContainer} from '../layouts/MainContainer'
 //   import Logo from './Logo'
   import { useRouter } from 'next/router'
-  
+  import {NewsletterForm} from './NewsletterForm'
   
  export const Footer = () => {
     const router = useRouter()
@@ -72,7 +72,7 @@ import {
   
               <Text
                 mt="0.75rem"
-                fontWeight={300}
+                fontWeight={400}
                 fontSize="1.125rem"
                 lineHeight="2.09375rem"
                 maxW="366px"
@@ -143,20 +143,7 @@ import {
                 >
                 Get real time update from us
                 </Text>
-                <Flex>
-                    <Input placeholder="Email Address"  
-                      type="email"
-                      background="#fff"
-                      border="0px"
-                      width="60%"
-                    />
-                    <Button
-                    width="40%"
-                    fontSize="1.125rem"
-                    fontWeight="400"
-                    borderRadius="0"
-                    >Subscribe</Button>
-                </Flex>
+                <NewsletterForm/>
               </GridItem>
           </Grid>
   
@@ -304,20 +291,7 @@ import {
                 >
                 Get real time update from us
                 </Text>
-              <Flex>
-                    <Input placeholder="Email Address"  
-                      type="email"
-                      background="#fff"
-                      border="0px"
-                      width="60%"
-                    />
-                    <Button
-                    width="40%"
-                    fontSize="1.125rem"
-                    fontWeight="400"
-                    borderRadius="0"
-                    >Subscribe</Button>
-                </Flex>
+              <NewsletterForm/>
             </VStack>
           </SimpleGrid>
   

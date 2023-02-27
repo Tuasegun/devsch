@@ -9,10 +9,7 @@ export interface CourseOverviewInterface {
   internshipDuration: string;
   understandWeb: string[];
   interfaceIntro: string[];
-  understandWeb2: string[];
-  interfaceDevelopment: string[];
   semantics: string[];
-  semantics2: string[];
   introtojavascript: string[];
   tooling: string[];
   framework: string[];
@@ -44,25 +41,15 @@ export const CourseOverviewContents: CourseOverviewInterface = {
     "Flex Box",
     "CSS Grid",
   ],
-  understandWeb2: [
-    " How The Web Work",
-    " Understanding the front-end vs back-end",
-  ],
-  interfaceDevelopment: [
-    "Introduction To HTML .",
-    "Introduction To CSS 3. Responsive Web Design. Basics of CSS Grid.",
-    "Responsive web design basics.",
-  ],
   semantics: [
-    " Why you should build  for  multiple browsers.",
+    " The need for accessibility in our modern world.",
+    "Tools to test accessibility.",
+    "Correctly labelling elements ( forms, images, etc)",
+    "Why you should build  for  multiple browsers.",
     "Handling browser errors in CSS.",
     "Media queries.",
   ],
-  semantics2: [
-    "  The need for accessibility in our modern world.",
-    "Tools to test accessibility.",
-    "Correctly labelling elements ( forms, images, etc)",
-  ],
+  
   introtojavascript: [
     " JS: Syntax, variables.",
     "JS: Loops, array, function.",

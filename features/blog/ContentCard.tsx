@@ -1,7 +1,7 @@
 import React from "react";
-import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Heading, Image, Text, Flex } from "@chakra-ui/react";
 import { BlogInterface } from "@/constant";
-
+import {AiOutlineDoubleRight} from 'react-icons/ai'
 export const ContentCard = ({
   title,
   id,
@@ -25,7 +25,17 @@ export const ContentCard = ({
       <Text color="#434343" mt="1rem" fontSize="1.125rem" lineHeight={"28.8px"}>
         {previewText}
       </Text>
-    
+
+     <Flex
+     alignItems="center"
+     mt="1.6875rem"
+     >
+     <Text 
+     fontSize="18px"
+     fontWeight ="500"
+     color="#000" 
+     > Read more</Text> <AiOutlineDoubleRight />
+     </Flex>
       </Box>
     
     </Box>

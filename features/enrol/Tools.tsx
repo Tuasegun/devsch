@@ -35,7 +35,7 @@ export const Tools = () => {
       <Flex
         justifyContent="space-between"
         flexDirection={["column", "column", "column", "column", "row"]}
-        py={[8, 8, 8, 8, 16]}
+        pb={["8.8125rem"]}
         rowGap={[8, 8, 8, 8, 0]}
         ref={toolsRef}
       >
