@@ -175,7 +175,7 @@ export const CourseDetail = () => {
             </Box>
           </Flex>
 
-          <Flex mt="1.75rem" columnGap={["0.5rem", "1.513125rem"]}>
+          <Flex mt="1.75rem" columnGap={["0.5rem", "1.513125rem"]} w="full">
            
            <Link href="/enrol">
             <Button
@@ -199,6 +199,7 @@ export const CourseDetail = () => {
                 px={["1.7rem", "20.3611px"]}
                 fontSize={["1rem","20.36px"]}
                 display={["inline-flex", "flex"]}
+                w={["auto","213px"]}
               >
                 Enrol Now
               </Button>

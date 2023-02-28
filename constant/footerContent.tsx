@@ -23,16 +23,16 @@ export const FooterSocialLinks: FooterSocialLink[] = [
     url: 'https://www.instagram.com/schfordevs/',
     icon: AiFillInstagram,
   },
-  {
-    name: 'LinkedIn',
-    url: '/',
-    icon: FaLinkedin,
-  },
-  {
-    name: 'Youtube',
-    url: '/',
-    icon: FaYoutube,
-  },
+  // {
+  //   name: 'LinkedIn',
+  //   url: '/',
+  //   icon: FaLinkedin,
+  // },
+  // {
+  //   name: 'Youtube',
+  //   url: '/',
+  //   icon: FaYoutube,
+  // },
 ]
 
 export const links = [
