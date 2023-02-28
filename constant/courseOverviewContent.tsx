@@ -17,7 +17,7 @@ export interface CourseOverviewInterface {
 }
 
 export const CourseOverviewContents: CourseOverviewInterface = {
-  price: "NGN 70,000",
+  price: "NGN 100,000",
   courseDuration: "12 weeks",
   admission: "70% on Admission",
   installment: "30% after 1 month",
