@@ -133,7 +133,7 @@ export const CourseDetail = () => {
               fontWeight="400"
             >
               The frontend development training is designed to equip you with
-              the skills to write codes in HTML, JAVASCRIPT, REACTJS to create
+              the skills to write codes in HTML, JAVASCRIPT, REACTJS, CSS and Tailwind CSS to create
               the frontend of products - what the users can see and interact
               with. At the end of the training, you will be able to create the
               front-end interface of any website and be able to work with any
