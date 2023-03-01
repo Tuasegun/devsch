@@ -43,15 +43,41 @@ export const CourseOverview = () => {
               bg="#3D7535"
               display="inline-flex"
               mb="1.5625rem"
+              align-items="center"
+              position="relative"
               boxShadow="4px 6px 0px 0px rgba(240,245,36,1)"
+              columnGap="0.5rem"
             >
+              <Box
+              position="relative"
+              mt="0.2rem"
+              >
+              <Box
+                position="absolute"
+                top={["10px","20px"]}
+                left="0"
+                width="100%"
+              >
+                <Image width="100%" src="assets/images/enrol/discountSlash.png" alt=""/>
+              </Box>
+              <Text
+                fontSize={["1.575rem", "1.9875rem"]}
+                color="brand.white"
+                fontWeight={500}
+              
+              >
+                {content.price}
+              </Text>
+              </Box>
+              <Box>
               <Text
                 fontSize={["1.875rem", "2.1875rem"]}
                 color="brand.white"
                 fontWeight={500}
               >
-                {content.price}
+                {content.discountPrice}
               </Text>
+              </Box>
             </Box>
             <Text mb="0.8rem" fontSize={["1.125rem"]} color="brand.black">
               Installmental Payment Options

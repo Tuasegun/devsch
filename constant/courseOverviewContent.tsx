@@ -1,5 +1,6 @@
 export interface CourseOverviewInterface {
   price: string;
+  discountPrice: string;
   courseDuration: string;
   admission: string;
   installment: string;
@@ -17,7 +18,8 @@ export interface CourseOverviewInterface {
 }
 
 export const CourseOverviewContents: CourseOverviewInterface = {
-  price: "NGN 200,000",
+  price: "₦200,000",
+  discountPrice: "₦150,000",
   courseDuration: "4 Months",
   admission: "70% on Admission",
   installment: "30% after 1 month",

@@ -4,7 +4,7 @@ import {MainContainer} from '@/layouts/MainContainer'
 import { RiTimer2Line } from 'react-icons/ri'
 import { AiOutlineCalendar } from 'react-icons/ai'
 import { EventForm } from './EventForm'
-
+import {eventContents} from '@/constant'
 import gsap from 'gsap'
 
 export const EventHero = () => {
@@ -57,7 +57,7 @@ export const EventHero = () => {
             className="ama-main-title"
           >
             {/* {bannerContent.mainTitle} */}
-            {" "}How to become a better software developer
+            {" "}{eventContents.subTitle}
           </Heading>
           <Flex
             className="ama-other-content"
@@ -80,7 +80,7 @@ export const EventHero = () => {
                 fontSize={{ base: '0.7rem', lg: '.9356rem' }}
                 fontWeight={'500'}
               >
-                7pm -  8pm (WAT)
+                {eventContents.time}
               </Text>
             </Box>
             <Box
@@ -99,7 +99,7 @@ export const EventHero = () => {
                 fontSize={{ base: '0.7rem', lg: '.9356rem' }}
                 fontWeight={'500'}
               >
-                19th February, 2023
+                {eventContents.date}
               </Text>
             </Box>
             <Box
@@ -118,7 +118,7 @@ export const EventHero = () => {
                 fontSize={{ base: '0.7rem', lg: '.9356rem' }}
                 fontWeight={'500'}
               >
-                Google Meet
+              {eventContents.location}
               </Text>
             </Box>
           </Flex>
@@ -146,7 +146,7 @@ export const EventHero = () => {
                 <Img
                 boxSize={{ base: '5.1875rem', lg: '7.5rem' }}
                   borderRadius={'50%'}
-                  src={"assets/images/speakers/odejobi.png"}
+                  src={eventContents.bannerImage}
                   alt="speakerImg"
                   objectFit="cover"
                   objectPosition={"top center"}
@@ -158,13 +158,13 @@ export const EventHero = () => {
                   fontWeight={'bold'}
                   color={'brand.dark.100'}
                 >
-                 David Odejobi
+                 {eventContents.speakerName}
                 </Text>
                 <Text
                   fontSize={{ base: '0.806875rem', lg: '1.25rem' }}
                   color="#5F6368"
                 >
-                 Data Analyst & Writer
+                 {eventContents.speakerRole}
                 </Text>
               </Box>
             </Flex>
@@ -187,16 +187,14 @@ export const EventHero = () => {
               lineHeight={{ base: '1.626875rem', lg: '2.2575rem' }}
             >
               {/* {bannerContent.description} */}
-              There are several ways to become a better software engineer. One of the most important things you can do is to continuously learn and improve your skills. This can include learning new programming languages, frameworks, and technologies, as well as staying up-to-date with industry trends and best practices.
+            {eventContents.description}
             </Text>
               <Text
               fontSize={{ base: '0.941875rem', lg: '1.306875rem' }}
               color="brand.dark.200"
               lineHeight={{ base: '1.626875rem', lg: '2.2575rem' }}
             >
-            Another important aspect of becoming a better software engineer is to gain practical experience through internships, part-time jobs, or freelance projects. This can help you to develop real-world problem-solving skills and learn how to apply your knowledge in a professional setting.
-
-
+              {eventContents.content1}
             </Text>
            
             <Text
@@ -204,8 +202,18 @@ export const EventHero = () => {
               color="brand.dark.200"
               lineHeight={{ base: '1.626875rem', lg: '2.2575rem' }}
             >
-             In this session David Odejobi would share a roadmap on how to be a better software engineer.
+              {eventContents.content2}
             </Text>
+
+            <Text
+              fontSize={{ base: '0.941875rem', lg: '1.306875rem' }}
+              color="brand.dark.200"
+              lineHeight={{ base: '1.626875rem', lg: '2.2575rem' }}
+            >
+              {eventContents.content3}
+            </Text>
+
+            
                     
           </Box>
         </Box>
