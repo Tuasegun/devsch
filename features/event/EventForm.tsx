@@ -210,7 +210,7 @@ export const EventForm = () => {
               <Select
                 backgroundColor={"#FCFCFC"}
                 border="0.406872px solid #B4B4B4"
-                placeholder="Are you on the Whatsapp GroupChat?"
+                placeholder="Are you on our Whatsapp GroupChat?"
                 _placeholder={{ color: "#B4B4B4" }}
                 name="whatsappgroup"
                 h="3.5rem"
