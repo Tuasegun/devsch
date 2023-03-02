@@ -34,21 +34,16 @@ export const CourseOverview = () => {
             ]}
             mb="1.3125rem"
           >
-            <Text fontSize={"1.125rem"} color="brand.black" fontWeight={400}>
+            <Box
+            display="flex"
+            alignItems="center"
+            columnGap="0.5rem"
+            >
+<Text fontSize={"1.125rem"} mt="0.2rem" color="brand.black" fontWeight={400}>
               Price
             </Text>
 
             <Box
-              padding={"20px 1.288125rem 0.5rem 0.875rem"}
-              bg="#3D7535"
-              display="inline-flex"
-              mb="1.5625rem"
-              align-items="center"
-              position="relative"
-              boxShadow="4px 6px 0px 0px rgba(240,245,36,1)"
-              columnGap="0.5rem"
-            >
-              <Box
               position="relative"
               mt="0.2rem"
               >
@@ -62,18 +57,32 @@ export const CourseOverview = () => {
               </Box>
               <Text
                 fontSize={["1.575rem", "1.9875rem"]}
-                color="brand.white"
-                fontWeight={500}
-              
+                color="#BFBFBF"
+                fontWeight={700}
+
               >
                 {content.price}
               </Text>
               </Box>
+            </Box>
+            
+
+            <Box
+              padding={"20px 1.288125rem 0.5rem 0.875rem"}
+              bg="#3D7535"
+              display="inline-flex"
+              mb="1.5625rem"
+              align-items="center"
+              position="relative"
+              boxShadow="4px 6px 0px 0px rgba(240,245,36,1)"
+              columnGap="0.5rem"
+            >
+             
               <Box>
               <Text
                 fontSize={["1.875rem", "2.1875rem"]}
                 color="brand.white"
-                fontWeight={500}
+                fontWeight={700}
               >
                 {content.discountPrice}
               </Text>
