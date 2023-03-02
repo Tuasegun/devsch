@@ -37,6 +37,7 @@ export const EventForm = () => {
       phone: { value: string };
       howyouknew: { value: string };
       questions: { value: string };
+      whatsappgroup: { value: string };
     };
 
     const formData = new FormData();
@@ -45,6 +46,7 @@ export const EventForm = () => {
     formData.append("phone", inputData.phone.value as string);
     formData.append("howyouknew", inputData.howyouknew.value as string);
     formData.append("questions", inputData.questions.value as string);
+    formData.append("whatsappgroup", inputData.whatsappgroup.value as string);
     //current date and time
     formData.append("date", new Date().toLocaleString());
 
@@ -67,6 +69,7 @@ export const EventForm = () => {
           phone: "",
           howyouknew: "",
           questions: "",
+          whatsappgroup: ""
         }}
         validationSchema={Yup.object({
           name: Yup.string().required("Name is Required"),
@@ -75,6 +78,7 @@ export const EventForm = () => {
             .required("Email is Required"),
           phone: Yup.string().required("Phone Number is Required"),
           howyouknew: Yup.string().required("How you knew is Required"),
+          whatsappgroup: Yup.string().required("Are you on the whatsapp group"),
           questions: Yup.string().required("Questions is Required"),
         })}
         onSubmit={(values, action) => {
@@ -87,7 +91,7 @@ export const EventForm = () => {
           formData.append("howyouknew", values.howyouknew as string);
           formData.append("questions", values.questions as string);
           formData.append("date", new Date().toLocaleString());
-
+          formData.append("whatsappgroup", values.whatsappgroup as string);
           fetch(scriptUrl, {
             method: "POST",
             body: formData,
@@ -200,6 +204,30 @@ export const EventForm = () => {
                 <option value="Twitter">Twitter</option>
                 <option value="Friend">Friend</option>
                 <option value="Others">Others</option>
+              </Select>
+            </FormControl>
+            <FormControl id="how">
+              <Select
+                backgroundColor={"#FCFCFC"}
+                border="0.406872px solid #B4B4B4"
+                placeholder="Are you on the Whatsapp GroupChat?"
+                _placeholder={{ color: "#B4B4B4" }}
+                name="whatsappgroup"
+                h="3.5rem"
+                _focusVisible={{
+                  outline: "none",
+                }}
+                value={formik.values.whatsappgroup}
+                onChange={formik.handleChange}
+                borderColor={
+                  formik.touched.whatsappgroup && formik.errors.whatsappgroup
+                    ? "red.500"
+                    : "#B4B4B4"
+                }
+              >
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+               
               </Select>
             </FormControl>
             <FormControl id="questions">
