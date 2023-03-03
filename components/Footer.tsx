@@ -45,7 +45,7 @@ import {
             <Button
               as={Link}
               href="/enrol"
-              _hover={{ textDecor: 'none', bg: 'brand.yellow.500' }}
+              _hover={{ textDecoration: 'none', bg: 'brand.yellow.500' }}
               bg="brand.white"
               color="brand.green.400"
               py={[4, 4, 4, "1.8625rem", "1.8625rem"]}
@@ -67,7 +67,7 @@ import {
             templateColumns="repeat(6, 1fr)"
             gap={5}
           >
-            <GridItem colSpan={3} w="100%">
+            <GridItem colSpan={2} w="100%">
               {/* <Logo color="white" /> */}
   
               <Text
@@ -272,6 +272,41 @@ import {
                   _hover={{ color: 'brand.black' }}
                 >
                  Join Community
+                </Text>
+              </Link>
+            </VStack>
+            <VStack alignItems="flex-start" mb="1rem">
+              <Text
+                fontSize="1.125rem"
+                fontWeight="600"
+                color="brand.black"
+                textTransform="uppercase"
+                textAlign="left"
+                mb="1rem"
+              >
+                Contact Us
+              </Text>
+  
+              <Link w="full" target="_blank" href="mailto:schfordevs@gmail.com">
+                <Text
+                  w="full"
+                  fontSize="1.125rem"
+                  textAlign="left"
+                  color="brand.black"
+                  _hover={{ color: 'brand.black' }}
+                >
+                 schfordevs@gmail.com
+                </Text>
+              </Link>
+              <Link w="full"  href="tel:+2348135369680">
+                <Text
+                  w="full"
+                  fontSize="1.125rem"
+                  textAlign="left"
+                  color="brand.black"
+                  _hover={{ color: 'brand.black' }}
+                >
+                  +2348135369680
                 </Text>
               </Link>
             </VStack>

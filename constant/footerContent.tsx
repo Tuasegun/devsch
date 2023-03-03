@@ -86,17 +86,17 @@ export const links = [
   //     },
   //   ],
   // },
-  // {
-  //   title: 'Newsletter',
-  //   links: [
-  //     {
-  //       name: 'perxels@gmail.com',
-  //       url: 'mailto:perxels@gmail.com',
-  //     },
-  //     {
-  //       name: '+2348135369680',
-  //       url: 'tel:+2348135369680',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Contact Us',
+    links: [
+      {
+        name: 'schfordevs@gmail.com',
+        url: 'mailto:schfordevs@gmail.com',
+      },
+      {
+        name: '+2348135369680',
+        url: 'tel:+2348135369680',
+      },
+    ],
+  },
 ]
