@@ -17,18 +17,18 @@ interface EventContent {
   
   export const eventContents: EventContent = {
     mainTitle: ' ',
-    subTitle: 'CLEAN CODES AND BEST PRACTICES',
+    subTitle: 'IMPOSTER SYNDROME AMONGST TECHIES',
     time: '7pm - 8pm (WAT)',
-    date: '1st April  2023',
+    date: '8th April  2023',
     location: 'GOOGLE MEET',
     bannerImage: '/assets/images/event/speakerImage.jpeg',
     description:
-      " Clean code and best practices are essential for any software development project, as they ensure that the code is easy to read, maintain, and understand. However, achieving clean code can be challenging, and it requires a good understanding of software design principles and coding best practices. In this session, Caleb Benjamin, a Frontend Engineer with several years of experience will discuss the importance of clean code and best practices in software development. ",
-    content1: "Join us on Saturday 1st April 2023 from 7 pm-8 pm to learn more about the benefits of clean code, coding best practices, and how to apply them to your software development projects.",
-    content2: "",
-    content3: "",
+      " Imposter syndrome is a psychological phenomenon where individuals doubt their skills and accomplishments, feeling like frauds who are undeserving of their success. ",
+    content1: "This phenomenon is prevalent among professionals in the tech industry, including software engineers.",
+    content2: " In this session, we will be discussing imposter syndrome among techies with Kamaldeen Kehinde, a seasoned Community Manager with years of experience in the field.",
+    content3: " Join us on Saturday 8th April 2023   from 7 pm-8 pm to learn more about the signs of imposter syndrome, how it affects techies, and strategies for overcoming it.",
     content4: "",
-    speakerName: 'Caleb Benjamin',
-    speakerRole: 'Frontend Engineer',
+    speakerName: 'Kamaldeen Kehinde',
+    speakerRole: 'Community manager',
   }
   
