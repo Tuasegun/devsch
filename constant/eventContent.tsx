@@ -17,18 +17,18 @@ interface EventContent {
   
   export const eventContents: EventContent = {
     mainTitle: ' ',
-    subTitle: 'IMPOSTER SYNDROME AMONGST TECHIES',
+    subTitle: 'THE LATEST TRENDS AND ADVANCEMENTS IN WEB DEVELOPMENT',
     time: '7pm - 8pm (WAT)',
-    date: '8th April  2023',
+    date: '15th April  2023',
     location: 'GOOGLE MEET',
     bannerImage: '/assets/images/event/speakerImage.jpeg',
     description:
-      " Imposter syndrome is a psychological phenomenon where individuals doubt their skills and accomplishments, feeling like frauds who are undeserving of their success. ",
-    content1: "This phenomenon is prevalent among professionals in the tech industry, including software engineers.",
-    content2: " In this session, we will be discussing imposter syndrome among techies with Kamaldeen Kehinde, a seasoned Community Manager with years of experience in the field.",
-    content3: " Join us on Saturday 8th April 2023   from 7 pm-8 pm to learn more about the signs of imposter syndrome, how it affects techies, and strategies for overcoming it.",
+      "Web development is constantly evolving, with new technologies and advancements being introduced regularly. Staying up to date with the latest trends and advancements is crucial for developers to create modern, efficient, and secure websites.",
+    content1: "We're excited to invite you to a special session with Tobiloba Adedeji on Saturday 15th April 2023 from 7 pm-8 pm. Tobiloba will be sharing invaluable insights on the latest tools, frameworks, and techniques that are shaping the future of web development",
+    content2: "Whether you are a beginner or an experienced developer, this session will provide valuable insights and knowledge to help you stay ahead in your career.",
+    content3: "",
     content4: "",
-    speakerName: 'Kamaldeen Kehinde',
-    speakerRole: 'Community manager',
+    speakerName: 'Tobiloba Adedeji',
+    speakerRole: 'Software Engineer',
   }
   

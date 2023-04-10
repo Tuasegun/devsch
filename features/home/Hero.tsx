@@ -4,8 +4,6 @@ import {HeroAnimation} from './HeroAnimation'
 import Link from 'next/link'
 import gsap from 'gsap'
 
-import ScrollTrigger from 'gsap/dist/ScrollTrigger'
-
 export const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null)
   useLayoutEffect(() => {
@@ -24,7 +22,6 @@ export const Hero = () => {
 
   return (
     <Box
-   
     bg="brand.green.300"
    pt={["30px", "50px", "50px", "3.9375rem"]}
     pb={["50px", "50px", "50px", "6.4375rem"]}
@@ -32,12 +29,8 @@ export const Hero = () => {
     pr={ ["1.25em", "1.25rem", "1.25rem", "0"]}
     pos="relative"
     height={["fit-content","100vh"]} 
-
     >
-
-           
-            <Flex 
-            // columns={[1, 2]}
+        <Flex 
             alignItems="center"
             //  className="Hero-Section"
             justifyContent="space-between"
@@ -73,8 +66,7 @@ export const Hero = () => {
 
                   {/* pictures */}
                 <HeroAnimation/>
-            </Flex>
-          
+            </Flex>     
     </Box>
   )
 }
