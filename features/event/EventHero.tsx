@@ -149,7 +149,7 @@ export const EventHero = () => {
                   src={eventContents.bannerImage}
                   alt="speakerImg"
                   objectFit="cover"
-                  objectPosition={"top center"}
+                  objectPosition={"center center"}
                 />
               </Box>
               <Box>
