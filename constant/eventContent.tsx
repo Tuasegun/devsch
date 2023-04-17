@@ -17,18 +17,18 @@ interface EventContent {
   
   export const eventContents: EventContent = {
     mainTitle: ' ',
-    subTitle: 'THE LATEST TRENDS AND ADVANCEMENTS IN WEB DEVELOPMENT',
+    subTitle: 'PRODUCTIVE HABITS AND PRACTICES FOR PROFESSIONAL GROWTH',
     time: '7pm - 8pm (WAT)',
-    date: '15th April  2023',
+    date: '22nd April 2023',
     location: 'GOOGLE MEET',
     bannerImage: '/assets/images/event/speakerImage.jpeg',
     description:
-      "Web development is constantly evolving, with new technologies and advancements being introduced regularly. Staying up to date with the latest trends and advancements is crucial for developers to create modern, efficient, and secure websites.",
-    content1: "We're excited to invite you to a special session with Tobiloba Adedeji on Saturday 15th April 2023 from 7 pm-8 pm. Tobiloba will be sharing invaluable insights on the latest tools, frameworks, and techniques that are shaping the future of web development",
-    content2: "Whether you are a beginner or an experienced developer, this session will provide valuable insights and knowledge to help you stay ahead in your career.",
+      "In today's fast-paced world, it's more important than ever for professionals to develop productive habits and practices that can help them grow and succeed in their careers.",
+    content1: "Whether you're just starting out in your field or looking to take your career to the next level, cultivating a set of effective habits can make all the difference. Join us for a special session with Ayotunde Pedro on Saturday 6th May 2023 from 7 pm-8 pm. Ayotunde will be sharing his valuable insight on these habits and practices, and how they can help you achieve your career goals.",
+    content2: "",
     content3: "",
     content4: "",
-    speakerName: 'Tobiloba Adedeji',
+    speakerName: 'Ayotunde Pedro',
     speakerRole: 'Software Engineer',
   }
   
