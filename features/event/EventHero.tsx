@@ -144,12 +144,12 @@ export const EventHero = () => {
             <Flex alignItems={'center'} columnGap={'0.725625rem'}>
               <Box>
                 <Img
-                boxSize={{ base: '5.1875rem', lg: '7.5rem' }}
+                boxSize={{ base: '5.1875rem', lg: '7.9rem' }}
                   borderRadius={'50%'}
                   src={eventContents.bannerImage}
                   alt="speakerImg"
                   objectFit="cover"
-                  objectPosition={"center center"}
+                  objectPosition={"top center"}
                 />
               </Box>
               <Box>
