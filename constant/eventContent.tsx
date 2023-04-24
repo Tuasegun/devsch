@@ -19,7 +19,7 @@ interface EventContent {
     mainTitle: ' ',
     subTitle: 'PROCRASTINATION AMONGST DEVELOPERS',
     time: '7pm - 8pm (WAT)',
-    date: '22nd April 2023',
+    date: '6th May 2023',
     location: 'GOOGLE MEET',
     bannerImage: '/assets/images/event/speakerImage.jpeg',
     description:
