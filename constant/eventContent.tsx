@@ -17,18 +17,18 @@ interface EventContent {
   
   export const eventContents: EventContent = {
     mainTitle: ' ',
-    subTitle: 'PRODUCTIVE HABITS AND PRACTICES FOR PROFESSIONAL GROWTH',
+    subTitle: 'PROCRASTINATION AMONGST DEVELOPERS',
     time: '7pm - 8pm (WAT)',
     date: '22nd April 2023',
     location: 'GOOGLE MEET',
     bannerImage: '/assets/images/event/speakerImage.jpeg',
     description:
-      "In today's fast-paced world, it's more important than ever for professionals to develop productive habits and practices that can help them grow and succeed in their careers.",
-    content1: "Whether you're just starting out in your field or looking to take your career to the next level, cultivating a set of effective habits can make all the difference. Join us for a special session with Ayotunde Pedro on Saturday 6th May 2023 from 7 pm-8 pm. Ayotunde will be sharing his valuable insight on these habits and practices, and how they can help you achieve your career goals.",
-    content2: "",
+      "Procrastination is a common issue that affects individuals in various fields, and the software development industry is no exception. As a Software Engineer, Abdul-Jemeel Odewole understands the negative impact that procrastination can have on productivity and overall work quality.",
+    content1: "In this session, we will explore the topic of procrastination among developers and how it can be detrimental to project timelines and team collaboration. Abdul-Jemeel will share his personal experiences and insights on how to identify and overcome procrastination tendencies in the workplace. ",
+    content2: "Join us on Saturday 20th May 2023 from 7 pm - 8 pm to learn valuable strategies that can help you or your team become more efficient and effective in your software development projects.",
     content3: "",
     content4: "",
-    speakerName: 'Ayotunde Pedro',
+    speakerName: 'Abdul-Jemeel Odewole',
     speakerRole: 'Software Engineer',
   }
   
