@@ -17,15 +17,15 @@ interface EventContent {
   
   export const eventContents: EventContent = {
     mainTitle: ' ',
-    subTitle: 'STRATEGIES FOR STAYING RELEVANT IN YOUR CAREER AS A DEVELOPER',
+    subTitle: 'PROCRASTINATION AMONGST DEVELOPERS',
     time: '7pm - 8pm (WAT)',
-    date: '29th May 2023',
+    date: '6th May 2023',
     location: 'GOOGLE MEET',
-    bannerImage: '/assets/images/speakers/dillion.png',
+    bannerImage: '/assets/images/event/speakerImage.jpeg',
     description:
-      "Technology is constantly evolving, and as a developer, it is essential to stay up-to-date with the latest trends and technologies to remain relevant in the industry.",
-    content1: "In this session, we will be discussing the strategies that developers can adopt to stay relevant in their careers with Dillion Megida, a seasoned Software Engineer with a wealth of experience. We will explore various approaches such as continuous learning, networking, and developing a personal brand.",
-    content2: "Join us on Saturday 29th April 2023 from 7 pm - 8 pm  to learn more about how you can stay relevant in your career as a developer.",
+      "Procrastination is a common issue that affects individuals in various fields, and the software development industry is no exception. As a Software Engineer, Abdul-Jemeel Odewole understands the negative impact that procrastination can have on productivity and overall work quality.",
+    content1: "In this session, we will explore the topic of procrastination among developers and how it can be detrimental to project timelines and team collaboration. Abdul-Jemeel will share his personal experiences and insights on how to identify and overcome procrastination tendencies in the workplace.",
+    content2: "Join us on Saturday 6th May 2023 from 7 pm - 8 pm to learn valuable strategies that can help you or your team become more efficient and effective in your software development projects.",
     content3: "",
     content4: "",
     speakerName: 'Dillion Megida',
