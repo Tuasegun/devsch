@@ -28,7 +28,7 @@ interface EventContent {
     content2: "Join us on Saturday 6th May 2023 from 7 pm - 8 pm to learn valuable strategies that can help you or your team become more efficient and effective in your software development projects.",
     content3: "",
     content4: "",
-    speakerName: 'Dillion Megida',
-    speakerRole: 'Internal Developer Advocate',
+    speakerName: 'Abdul-Jemeel Odewole',
+    speakerRole: 'Software Engineer',
   }
   
