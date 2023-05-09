@@ -17,18 +17,18 @@ interface EventContent {
   
   export const eventContents: EventContent = {
     mainTitle: ' ',
-    subTitle: 'PROCRASTINATION AMONGST DEVELOPERS',
+    subTitle: 'THE ROLE OF ARTIFICIAL INTELLIGENCE IN WEB DEVELOPMENT',
     time: '7pm - 8pm (WAT)',
-    date: '6th May 2023',
+    date: '13th May 2023',
     location: 'GOOGLE MEET',
-    bannerImage: '/assets/images/event/speakerImage.jpeg',
+    bannerImage: '/assets/images/event/speakerImage.jpg',
     description:
-      "Procrastination is a common issue that affects individuals in various fields, and the software development industry is no exception. As a Software Engineer, Abdul-Jemeel Odewole understands the negative impact that procrastination can have on productivity and overall work quality.",
-    content1: "In this session, we will explore the topic of procrastination among developers and how it can be detrimental to project timelines and team collaboration. Abdul-Jemeel will share his personal experiences and insights on how to identify and overcome procrastination tendencies in the workplace.",
-    content2: "Join us on Saturday 6th May 2023 from 7 pm - 8 pm to learn valuable strategies that can help you or your team become more efficient and effective in your software development projects.",
+      "Artificial Intelligence (AI) and Machine Learning (ML) are becoming increasingly important in the field of web development. As the world becomes more connected, websites are being designed to provide more personalized experiences for users, and AI and ML are playing a key role in making this possible.",
+    content1: "In this session, we will be discussing the role of AI and ML in web development with Abdulrasaq Mustapha, a Software Engineer with extensive knowledge in this field. Join us on Saturday 13th of April 2023 from 7 pm-8 pm to learn more about the ways in which AI and ML are shaping the future of web development and how they can be integrated into your projects.",
+    content2: "",
     content3: "",
     content4: "",
-    speakerName: 'Abdul-Jemeel Odewole',
-    speakerRole: 'Software Engineer',
+    speakerName: 'Abdulrasaq Mustapha',
+    speakerRole: 'Frontend Engineer',
   }
   
