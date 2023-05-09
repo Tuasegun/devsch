@@ -24,7 +24,7 @@ interface EventContent {
     bannerImage: '/assets/images/event/speakerImage.jpg',
     description:
       "Artificial Intelligence (AI) and Machine Learning (ML) are becoming increasingly important in the field of web development. As the world becomes more connected, websites are being designed to provide more personalized experiences for users, and AI and ML are playing a key role in making this possible.",
-    content1: "In this session, we will be discussing the role of AI and ML in web development with Abdulrasaq Mustapha, a Software Engineer with extensive knowledge in this field. Join us on Saturday 13th of April 2023 from 7 pm-8 pm to learn more about the ways in which AI and ML are shaping the future of web development and how they can be integrated into your projects.",
+    content1: "In this session, we will be discussing the role of AI and ML in web development with Abdulrasaq Mustapha, a Software Engineer with extensive knowledge in this field. Join us on Saturday 13th of May 2023 from 7 pm-8 pm to learn more about the ways in which AI and ML are shaping the future of web development and how they can be integrated into your projects.",
     content2: "",
     content3: "",
     content4: "",
