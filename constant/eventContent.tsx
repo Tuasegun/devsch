@@ -17,18 +17,18 @@ interface EventContent {
   
   export const eventContents: EventContent = {
     mainTitle: ' ',
-    subTitle: 'HOW TO BOOST YOUR PRODUCTIVITY AS A DEVELOPER',
+    subTitle: 'BENEFITS AND CHALLENGES OF OPEN SOURCE',
     time: '7pm - 8pm (WAT)',
-    date: '20th May 2023',
+    date: '27th May 2023',
     location: 'GOOGLE MEET',
     bannerImage: '/assets/images/event/speakerImage.jpg',
     description:
-      "As a software developer, it's essential to be productive in order to meet project deadlines and accomplish tasks efficiently. However, productivity can be challenging to maintain, especially when faced with distractions or a lack of motivation.",
-    content1: "In this session, we will be discussing practical tips and strategies to help boost your productivity as a developer with Ebenezer Don, the founder of NewDev.io. We will cover topics such as time management, goal setting, optimizing your workspace, and maintaining focus.",
-    content2: "Join us on Saturday 20th May 2023 from 7 pm-8 pm to learn how to increase your productivity as a developer and reach your full potential.",
+      "Open-source software has become increasingly popular in recent years due to its numerous benefits, such as cost savings, flexibility, and increased collaboration. However, there are also several challenges associated with open source, including security risks and the need for specialized skills.",
+    content1: "In this session, we will be discussing the benefits and challenges of open source with Adio Mojeed, a Frontend  Engineer with extensive experience in open source development.",
+    content2: "Join us on Saturday 27th May 2023 from 7 pm-8 pm to learn more about the advantages and disadvantages of open source and how it can be utilized effectively in software development.",
     content3: "",
     content4: "",
-    speakerName: 'Ebenezer Don',
-    speakerRole: 'Founder of NewDev.io',
+    speakerName: 'Adio Mojeed',
+    speakerRole: 'Frontend Engineer',
   }
   
