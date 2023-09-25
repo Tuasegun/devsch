@@ -43,7 +43,7 @@ export const CourseOverview = () => {
               Price
             </Text>
 
-            <Box
+            {/* <Box
               position="relative"
               mt="0.2rem"
               >
@@ -63,7 +63,7 @@ export const CourseOverview = () => {
               >
                 {content.price}
               </Text>
-              </Box>
+              </Box> */}
             </Box>
             
 
@@ -84,7 +84,7 @@ export const CourseOverview = () => {
                 color="brand.white"
                 fontWeight={700}
               >
-                {content.discountPrice}
+                {content.price}
               </Text>
               </Box>
             </Box>
